@@ -1,0 +1,18 @@
+{
+  "record_chirp": {
+    "sounds": [
+      {
+        "name": "hokum:record_chirp",
+        "stream": true
+
+      }
+    ]
+  },
+
+  "celestine_fall": {
+    "subtitle": "sounds.hokum.celestine_break_fall",
+    "sounds": [
+      "hokum:celestine_fall"
+    ]
+  }
+}

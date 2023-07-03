@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 3000,
+  "experience": 5,
+  "group": "lunite_ingot",
+  "ingredient": {
+    "item": "hokum:raw_lunite"
+  },
+  "result": "hokum:lunite_ingot"
+}

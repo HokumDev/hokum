@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "hokum:block/jungle_dispenser_vertical",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "hokum:block/jungle_dispenser",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "hokum:block/jungle_dispenser"
+    },
+    "facing=south": {
+      "model": "hokum:block/jungle_dispenser",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "hokum:block/jungle_dispenser_vertical"
+    },
+    "facing=west": {
+      "model": "hokum:block/jungle_dispenser",
+      "y": 270
+    }
+  }
+}

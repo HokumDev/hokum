@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "celestine_ingot",
+  "ingredients": [
+    {
+      "item": "hokum:celestine_dust"
+    },
+    {
+      "item": "hokum:celestine_dust"
+    },
+    {
+      "item": "hokum:celestine_dust"
+    },
+    {
+      "item": "hokum:celestine_crystal"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "hokum:celestine_ingot"
+  }
+}

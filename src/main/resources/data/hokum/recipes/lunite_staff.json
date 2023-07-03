@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:ender_eye"
+    },
+    "C": {
+      "item": "hokum:lunite_ingot"
+    }
+  },
+  "pattern": [
+    " CX",
+    " #C",
+    "#  "
+  ],
+  "result": {
+    "item": "hokum:lunite_staff"
+  }
+}

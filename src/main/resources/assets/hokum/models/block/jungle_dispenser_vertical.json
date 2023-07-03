@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/orientable_vertical",
+  "textures": {
+    "front": "hokum:block/jungle_dispenser",
+    "side": "hokum:block/jungle_bricks"
+  }
+}

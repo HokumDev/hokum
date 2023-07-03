@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "hokum:block/jungle_dispenser",
+    "side": "hokum:block/jungle_bricks",
+    "top": "hokum:block/jungle_bricks"
+  }
+}

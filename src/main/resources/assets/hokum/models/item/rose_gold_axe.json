@@ -1,0 +1,8 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "hokum:item/rose_gold_axe"
+
+    }
+
+}

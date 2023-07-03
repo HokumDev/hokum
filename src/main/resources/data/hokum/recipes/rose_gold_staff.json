@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "hokum:rose_gold_ingot"
+    },
+    "C": {
+      "item": "minecraft:ghast_tear"
+    }
+  },
+  "pattern": [
+    " XC",
+    " #X",
+    "#  "
+  ],
+  "result": {
+    "item": "hokum:rose_gold_staff"
+  }
+}

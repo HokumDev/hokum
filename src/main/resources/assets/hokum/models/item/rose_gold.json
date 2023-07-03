@@ -1,0 +1,9 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "hokum:item/rose_gold"
+
+
+    }
+
+}
