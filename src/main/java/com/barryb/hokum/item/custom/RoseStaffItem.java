@@ -21,7 +21,7 @@ public class RoseStaffItem extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack iStack, LivingEntity target, LivingEntity attacker){
-        if(!target.isInvertedHealAndHarm()){
+        if (!target.isInvertedHealAndHarm()) {
             target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 400, 2), attacker);
         }
 
@@ -30,7 +30,7 @@ public class RoseStaffItem extends SwordItem {
 
     @Override
     public InteractionResult interactLivingEntity(ItemStack itemStack, Player player, LivingEntity target, InteractionHand interactionHand) {
-        if(!target.isInvertedHealAndHarm() && !player.getCooldowns().isOnCooldown(itemStack.getItem())){
+        if (!target.isInvertedHealAndHarm() && !player.getCooldowns().isOnCooldown(itemStack.getItem())) {
             target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 400, 2), player);
             player.awardStat(Stats.ITEM_USED.get(itemStack.getItem()));
             player.level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 1.0f, 1.0f);

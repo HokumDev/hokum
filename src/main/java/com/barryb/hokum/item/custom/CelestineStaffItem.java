@@ -24,14 +24,14 @@ public class CelestineStaffItem extends SwordItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
-            if(player.isOnGround()){
+        if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
+            if (player.isOnGround()) {
                 player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 15, 15), player);
                 player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100, 0), player);
                 player.level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENDER_DRAGON_FLAP, SoundSource.PLAYERS, 1.0f, 1.0f);
                 player.getCooldowns().addCooldown(this, 50);
                 player.awardStat(Stats.ITEM_USED.get(this));
-            }else{
+            } else {
                 player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 10, 10), player);
                 player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 85, 0), player);
                 player.level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENDER_DRAGON_FLAP, SoundSource.PLAYERS, 1.0f, 1.0f);
