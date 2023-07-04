@@ -71,15 +71,6 @@ public class LuniteStaffItem extends SwordItem {
     //getItemInHand
 
 
-    @Override
-    public boolean hurtEnemy(ItemStack iStack, LivingEntity target, LivingEntity attacker){
-
-            target.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 10, 2), attacker);
-
-
-        return super.hurtEnemy(iStack, target, attacker);
-    }
-
     public static BlockHitResult getValidTP(Level level, LivingEntity player, ClipContext.Fluid clipContext, double maxDist) {
         var rotation = player.getLookAngle().normalize().scale(maxDist);
         var position = player.getEyePosition();

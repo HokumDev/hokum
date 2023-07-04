@@ -28,13 +28,13 @@ public class ModItems {
     public static final RegistryObject<Item> ROSEGOLD = ITEMS.register("rose_gold",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
     public static final RegistryObject<SwordItem> ROSE_GOLD_SWORD = ITEMS.register("rose_gold_sword",
-            () -> new SwordItem(ToolTiers.ROSEGOLD, 3, -2.2f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new SwordItem(ToolTiers.ROSEGOLD, 5, -2.2f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<PickaxeItem> ROSE_GOLD_PICKAXE = ITEMS.register("rose_gold_pickaxe",
             () -> new PickaxeItem(ToolTiers.ROSEGOLD, 1, -2.7f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<ShovelItem> ROSE_GOLD_SHOVEL = ITEMS.register("rose_gold_shovel",
             () -> new ShovelItem(ToolTiers.ROSEGOLD, 0, -3.0f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<AxeItem> ROSE_GOLD_AXE = ITEMS.register("rose_gold_axe",
-            () ->  new AxeItem(ToolTiers.ROSEGOLD, 6, -3.0f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () ->  new AxeItem(ToolTiers.ROSEGOLD, 6, -2.9f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<HoeItem> ROSE_GOLD_HOE = ITEMS.register("rose_gold_hoe",
             () ->  new HoeItem(ToolTiers.ROSEGOLD, 0, 0, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
@@ -133,13 +133,13 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
     public static final RegistryObject<SwordItem> LUNITE_SWORD = ITEMS.register("lunite_sword",
-            () -> new SwordItem(ToolTiers.LUNITE, 8, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new SwordItem(ToolTiers.LUNITE, 10, -2.7f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<PickaxeItem> LUNITE_PICKAXE = ITEMS.register("lunite_pickaxe",
             () -> new PickaxeItem(ToolTiers.LUNITE, 6, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<ShovelItem> LUNITE_SHOVEL = ITEMS.register("lunite_shovel",
             () -> new ShovelItem(ToolTiers.LUNITE, 5, -2.9f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<AxeItem> LUNITE_AXE = ITEMS.register("lunite_axe",
-            () ->  new AxeItem(ToolTiers.LUNITE, 10, -3.3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () ->  new AxeItem(ToolTiers.LUNITE, 14, -3.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<HoeItem> LUNITE_HOE = ITEMS.register("lunite_hoe",
             () ->  new HoeItem(ToolTiers.LUNITE, 1, 0, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
@@ -180,7 +180,7 @@ public class ModItems {
     }
 
     public static class ArmorTiers {
-        public static final ArmorMaterial ROSE_GOLD = new com.barryb.hokum.custom.ArmorMaterials("rose_gold", 12, new int[] {1, 3, 5, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
+        public static final ArmorMaterial ROSE_GOLD = new com.barryb.hokum.custom.ArmorMaterials("rose_gold", 12, new int[] {2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD,1, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final ArmorMaterial ROSE_GOLD_CROWN = new com.barryb.hokum.custom.ArmorMaterials("rose_crown", 12, new int[] {1, 1, 1, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final ArmorMaterial CELESTINE = new ArmorMaterials("celestine", 31, new int[] {3, 6, 8, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final ArmorMaterial CELESTINE_CROWN = new ArmorMaterials("celestine_crown", 31, new int[] {1, 1, 1, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
@@ -204,7 +204,7 @@ public class ModItems {
     }
 
     public static class Foodstuffs {
-        public static final FoodProperties ROSE_GOLD_CARROT = new FoodProperties.Builder().nutrition(6).saturationMod(1.6f).alwaysEat().effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 60, 0), 1.0f).build();
+        public static final FoodProperties ROSE_GOLD_CARROT = new FoodProperties.Builder().nutrition(6).saturationMod(1.1f).alwaysEat().effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 60, 0), 1.0f).build();
     }
 }
 

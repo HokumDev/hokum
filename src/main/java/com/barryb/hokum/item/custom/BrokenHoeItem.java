@@ -19,9 +19,9 @@ public class BrokenHoeItem extends HoeItem {
     }
 
     @Override
-    public boolean mineBlock(ItemStack p_40998_, Level p_40999_, BlockState p_41000_, BlockPos p_41001_, LivingEntity p_41002_) {
+    public boolean mineBlock(ItemStack itemStack, Level p_40999_, BlockState p_41000_, BlockPos p_41001_, LivingEntity p_41002_) {
         if (!p_40999_.isClientSide && p_41000_.getDestroySpeed(p_40999_, p_41001_) != 0.0F) {
-            p_40998_.hurtAndBreak(1, p_41002_, (p_40992_) -> {
+            itemStack.hurtAndBreak(1, p_41002_, (p_40992_) -> {
                 p_40992_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
             });
         }
