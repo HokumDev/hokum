@@ -38,7 +38,7 @@ public class ModItems {
     public static final RegistryObject<HoeItem> ROSE_GOLD_HOE = ITEMS.register("rose_gold_hoe",
             () ->  new HoeItem(ToolTiers.ROSEGOLD, 0, 0, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
-    public static final RegistryObject<SwordItem> ROSE_GOLD_STAFF = ITEMS.register("rose_gold_staff",
+    public static final RegistryObject<StaffItem> ROSE_GOLD_STAFF = ITEMS.register("rose_gold_staff",
             () -> new RoseStaffItem(ToolTiers.ROSEGOLD, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
 
@@ -103,7 +103,7 @@ public class ModItems {
             () ->  new AxeItem(ToolTiers.CELESTINE, 8, -2.9f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<HoeItem> CELESTINE_HOE = ITEMS.register("celestine_hoe",
             () ->  new HoeItem(ToolTiers.CELESTINE, 0, 0, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
-    public static final RegistryObject<SwordItem> CELESTINE_STAFF = ITEMS.register("celestine_staff",
+    public static final RegistryObject<StaffItem> CELESTINE_STAFF = ITEMS.register("celestine_staff",
             () -> new CelestineStaffItem(ToolTiers.CELESTINE, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<Item> CELESTINE_CRYSTAL = ITEMS.register("celestine_crystal",
@@ -143,7 +143,7 @@ public class ModItems {
     public static final RegistryObject<HoeItem> LUNITE_HOE = ITEMS.register("lunite_hoe",
             () ->  new HoeItem(ToolTiers.LUNITE, 1, 0, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
-    public static final RegistryObject<SwordItem> LUNITE_STAFF = ITEMS.register("lunite_staff",
+    public static final RegistryObject<StaffItem> LUNITE_STAFF = ITEMS.register("lunite_staff",
             () -> new LuniteStaffItem(ToolTiers.LUNITE, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<ModArmorItem> LUNITE_HELMET = ITEMS.register("lunite_helmet",
@@ -157,9 +157,11 @@ public class ModItems {
     public static final RegistryObject<ModArmorItem> LUNITE_CROWN = ITEMS.register("lunite_crown",
             () -> new ModArmorItem(ArmorTiers.LUNITE_CROWN, EquipmentSlot.HEAD, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
-    public static final RegistryObject<SwordItem> GOD_STAFF = ITEMS.register("god_staff",
+    public static final RegistryObject<StaffItem> GOD_STAFF = ITEMS.register("god_staff",
             () -> new GodStaffItem(ToolTiers.CELESTINE, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
+    public static final RegistryObject<StaffItem> SCAFF_STAFF = ITEMS.register("scaff_staff",
+            () -> new BambooStaffItem(ToolTiers.BAMBOO, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
 
 
@@ -174,6 +176,7 @@ public class ModItems {
         public static final Tier ROSEGOLD = new ForgeTier(2, 280, 12f, 0, 12, null, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final Tier CELESTINE = new ForgeTier(5, 1200, 10f, 0, 8, null, () -> Ingredient.of(ModItems.CELESTINE_CRYSTAL.get()));
         public static final Tier LUNITE = new ForgeTier(5, -1, 8f, 0, 8, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
+        public static final Tier BAMBOO = new ForgeTier(1, 20, 8f, 0, 0, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
 
 

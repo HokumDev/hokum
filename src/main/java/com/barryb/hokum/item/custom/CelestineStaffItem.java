@@ -16,7 +16,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.Level;
 
-public class CelestineStaffItem extends SwordItem {
+public class CelestineStaffItem extends StaffItem {
 
     public CelestineStaffItem(Tier tier, int attackMod, float attackSpeedMod, Properties props) {
         super(tier, attackMod, attackSpeedMod, props);

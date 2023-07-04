@@ -25,7 +25,7 @@ import net.minecraft.world.phys.Vec3;
 
 import java.util.Map;
 
-public class LuniteStaffItem extends SwordItem {
+public class LuniteStaffItem extends StaffItem {
 
     public LuniteStaffItem(Tier tier, int attackMod, float attackSpeedMod, Properties props) {
         super(tier, attackMod, attackSpeedMod, props);

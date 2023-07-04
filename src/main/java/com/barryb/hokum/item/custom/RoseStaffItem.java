@@ -13,7 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 
-public class RoseStaffItem extends SwordItem {
+public class RoseStaffItem extends StaffItem {
 
     public RoseStaffItem(Tier tier, int attackMod, float attackSpeedMod, Properties props) {
         super(tier, attackMod, attackSpeedMod, props);

@@ -19,7 +19,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 
-public class GodStaffItem extends SwordItem {
+public class GodStaffItem extends StaffItem {
 
     public GodStaffItem(Tier tier, int attackMod, float attackSpeedMod, Properties props) {
         super(tier, attackMod, attackSpeedMod, props);
