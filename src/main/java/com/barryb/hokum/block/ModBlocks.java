@@ -86,6 +86,10 @@ public class ModBlocks {
             () -> new DispenserBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(100f, 30).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> FOOLS_GOLD = registerBlock("fools_gold",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.1f, 30).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
 
 
 

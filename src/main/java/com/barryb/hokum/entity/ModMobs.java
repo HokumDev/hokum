@@ -32,7 +32,7 @@ public class ModMobs {
     public static final RegistryObject<EntityType<Widow>> WIDOW =
             ENTITY_TYPES.register("widow",
                     () -> EntityType.Builder.of(Widow::new, MobCategory.MONSTER)
-                            .sized(0.4f, 1.5f)
+                            .sized(0.7f, 0.5f)
                             .build(new ResourceLocation(Hokum.MODID, "widow").toString()));
 
     public static final RegistryObject<EntityType<MommyLongFangs>> MOMMY =
