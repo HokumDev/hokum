@@ -53,6 +53,7 @@ public class StaffItem extends TieredItem implements Vanishable {
         return true;
     }
 
+
     public boolean mineBlock(ItemStack p_43282_, Level p_43283_, BlockState p_43284_, BlockPos p_43285_, LivingEntity p_43286_) {
         if (p_43284_.getDestroySpeed(p_43283_, p_43285_) != 0.0F) {
             p_43282_.hurtAndBreak(2, p_43286_, (p_43276_) -> {

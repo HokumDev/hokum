@@ -1,7 +1,9 @@
 package com.barryb.hokum.item;
 
 import com.barryb.hokum.Hokum;
+import com.barryb.hokum.block.ModBlocks;
 import com.barryb.hokum.custom.ArmorMaterials;
+import com.barryb.hokum.entity.ModMobs;
 import com.barryb.hokum.item.custom.*;
 import com.barryb.hokum.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
@@ -12,6 +14,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -159,11 +162,15 @@ public class ModItems {
 
     public static final RegistryObject<StaffItem> GOD_STAFF = ITEMS.register("god_staff",
             () -> new GodStaffItem(ToolTiers.CELESTINE, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> WIDOW_SPAWN_EGG = ITEMS.register("widow_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModMobs.WIDOW, 0x100700, 0xef9805,
+                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
-    public static final RegistryObject<StaffItem> SCAFF_STAFF = ITEMS.register("scaff_staff",
-            () -> new BambooStaffItem(ToolTiers.BAMBOO, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+    public static final RegistryObject<Item> AMBER_STAFF = ITEMS.register("amber_staff",
+            () -> new BambooStaffItem(ModBlocks.AMBER_SCAFFOLDING.get(), new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
-
+    public static final RegistryObject<AxeItem> DOOM_PENDULUM = ITEMS.register("doom_pendulum",
+            () ->  new PendulumOfDoomItem(ToolTiers.DOOM, 1, -3.5f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).rarity(Rarity.RARE)));
 
 
 
@@ -178,6 +185,7 @@ public class ModItems {
         public static final Tier LUNITE = new ForgeTier(5, -1, 8f, 0, 8, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final Tier BAMBOO = new ForgeTier(1, 20, 8f, 0, 0, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
+        public static final Tier DOOM = new ForgeTier(1, 100, 8f, 0, 5, null, () -> Ingredient.of(Items.MAGMA_CREAM));
 
 
     }
@@ -186,7 +194,7 @@ public class ModItems {
         public static final ArmorMaterial ROSE_GOLD = new com.barryb.hokum.custom.ArmorMaterials("rose_gold", 12, new int[] {2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD,1, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final ArmorMaterial ROSE_GOLD_CROWN = new com.barryb.hokum.custom.ArmorMaterials("rose_crown", 12, new int[] {1, 1, 1, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final ArmorMaterial CELESTINE = new ArmorMaterials("celestine", 31, new int[] {3, 6, 8, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
-        public static final ArmorMaterial CELESTINE_CROWN = new ArmorMaterials("celestine_crown", 31, new int[] {1, 1, 1, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
+        public static final ArmorMaterial CELESTINE_CROWN = new ArmorMaterials("celestine_crown", 31, new int[] {1, 1, 1, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final ArmorMaterial LUNITE = new com.barryb.hokum.custom.ArmorMaterials("lunite", -1, new int[] {3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 3, 0.3f, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final ArmorMaterial LUNITE_CROWN = new ArmorMaterials("lunite_crown", -1, new int[] {1, 1, 1, 3}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 3, 0.3f, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 

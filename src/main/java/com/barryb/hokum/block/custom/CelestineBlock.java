@@ -32,7 +32,7 @@ public class CelestineBlock extends Block {
                     entity.getX(),
                     entity.getY(),
                     entity.getZ(),
-                    SoundEvents.AMETHYST_BLOCK_PLACE,
+                    ModSounds.CELESTINE_FALL.get(),
                     SoundSource.BLOCKS,
                     1.0f,
                     1.0f);

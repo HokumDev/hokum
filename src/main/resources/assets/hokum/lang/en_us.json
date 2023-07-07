@@ -58,8 +58,18 @@
   "item.hokum.raw_lunite": "Raw Lunite",
   "block.hokum.barite": "Barite",
   "block.hokum.polished_barite": "Polished Barite",
-  "block.hokum.lunite_block": "Block of Lunite",
+  "block.hokum.polished_barite_stairs": "Polished Barite Stairs",
+  "block.hokum.polished_barite_slab": "Polished Barite Slab",
+  "block.hokum.jungle_bricks": "Jungle Brick",
+  "block.hokum.mossy_jungle_bricks": "Mossy Jungle Brick",
+  "block.hokum.jungle_dispenser": "Jungle Dispenser",
+  "block.hokum.jungle_pressure_plate": "Jungle Pressureplate",
+  "block.hokum.fools_gold": "Fools Gold",
+  "block.hokum.amber_scaffolding": "Amber Staff",
+  "block.hokum.god_staff": "Creative Staff",
+
   "entity.hokum.widow": "Widow",
+  "entity.hokum.mommy_long_legs": "Mommy Long Legs",
 
 
 

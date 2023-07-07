@@ -1,6 +1,7 @@
 package com.barryb.hokum.block;
 
 import com.barryb.hokum.Hokum;
+import com.barryb.hokum.block.custom.AmberScaffoldingBlock;
 import com.barryb.hokum.block.custom.CelestineBlock;
 import com.barryb.hokum.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -10,7 +11,6 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -88,16 +88,23 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FOOLS_GOLD = registerBlock("fools_gold",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(0.1f, 30).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(0.1f, 18).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> AMBER_SCAFFOLDING = BLOCKS.register("amber_scaffolding",
+            () -> new AmberScaffoldingBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .instabreak().requiresCorrectToolForDrops()));
 
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
-        RegistryObject<T> g = BLOCKS.register(name, block);
-        registerBlockItem(name, g, tab);
-        return g;
+            RegistryObject<T> g = BLOCKS.register(name, block);
+            registerBlockItem(name, g, tab);
+            return g;
+
+
     }
+    //
+
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab){
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -10,6 +10,8 @@ import com.barryb.hokum.world.feature.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
 import com.barryb.hokum.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -96,6 +98,9 @@ public class Hokum
         {
             EntityRenderers.register(ModMobs.WIDOW.get(), WidowRenderer::new);
             EntityRenderers.register(ModMobs.MOMMY.get(), MommyRenderer::new);
+
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.AMBER_SCAFFOLDING.get(), RenderType.translucent());
+
 
         }
     }

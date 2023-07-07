@@ -15,8 +15,13 @@ public class ModSounds extends SoundEvent{
     public static RegistryObject<SoundEvent> RECORD_CHIRP =
             registerSoundEvent("record_chirp");
 
+    public static RegistryObject<SoundEvent> RECORD_STAL =
+            registerSoundEvent("record_stal");
     public static RegistryObject<SoundEvent> CELESTINE_FALL =
             registerSoundEvent("celestine_fall");
+
+    public static RegistryObject<SoundEvent> WOW_CRIT =
+            registerSoundEvent("wow_crit");
 
     public ModSounds(ResourceLocation p_11659_) {
         super(p_11659_);
