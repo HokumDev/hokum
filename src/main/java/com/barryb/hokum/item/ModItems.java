@@ -156,10 +156,11 @@ public class ModItems {
             () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.FEET, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> LUNITE_CROWN = ITEMS.register("lunite_crown",
             () -> new ModArmorItem(ArmorTiers.LUNITE_CROWN, EquipmentSlot.HEAD, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-
     public static final RegistryObject<SwordItem> GOD_STAFF = ITEMS.register("god_staff",
             () -> new GodStaffItem(ToolTiers.CELESTINE, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
+    public static final RegistryObject<SwordItem> AMBER_SWORD = ITEMS.register("amber_sword",
+            () -> new AmberSwordItem(ToolTiers.AMBER, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
 
 
@@ -175,6 +176,7 @@ public class ModItems {
         public static final Tier CELESTINE = new ForgeTier(5, 1200, 10f, 0, 8, null, () -> Ingredient.of(ModItems.CELESTINE_CRYSTAL.get()));
         public static final Tier LUNITE = new ForgeTier(5, -1, 8f, 0, 8, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
+        public static final Tier AMBER = new ForgeTier(3, 555, 8f, 0, 10, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
 
     }
