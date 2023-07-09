@@ -134,6 +134,12 @@ public class ModBlocks {
                         return 15;
                     })), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> AMBER_PICKAXE = registerBlock("amber_pickaxe",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> g = BLOCKS.register(name, block);

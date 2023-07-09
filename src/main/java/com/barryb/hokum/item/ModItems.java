@@ -162,6 +162,8 @@ public class ModItems {
     public static final RegistryObject<SwordItem> AMBER_SWORD = ITEMS.register("amber_sword",
             () -> new AmberSwordItem(ToolTiers.AMBER, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
+    public static final RegistryObject<AxeItem> AMBER_AXE = ITEMS.register("amber_axe",
+            () ->  new AxeItem(ToolTiers.AMBER, 7, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
 
 
