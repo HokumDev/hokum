@@ -21,7 +21,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-
+//it its time
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =
@@ -160,7 +160,7 @@ public class ModItems {
     public static final RegistryObject<ModArmorItem> LUNITE_CROWN = ITEMS.register("lunite_crown",
             () -> new ModArmorItem(ArmorTiers.LUNITE_CROWN, EquipmentSlot.HEAD, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
-    public static final RegistryObject<StaffItem> GOD_STAFF = ITEMS.register("god_staff",
+    public static final RegistryObject<SwordItem> GOD_STAFF = ITEMS.register("god_staff",
             () -> new GodStaffItem(ToolTiers.CELESTINE, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> WIDOW_SPAWN_EGG = ITEMS.register("widow_spawn_egg",
             () -> new ForgeSpawnEggItem(ModMobs.WIDOW, 0x100700, 0xef9805,
@@ -171,6 +171,12 @@ public class ModItems {
 
     public static final RegistryObject<AxeItem> DOOM_PENDULUM = ITEMS.register("doom_pendulum",
             () ->  new PendulumOfDoomItem(ToolTiers.DOOM, 1, -3.5f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).rarity(Rarity.RARE)));
+    public static final RegistryObject<SwordItem> AMBER_SWORD = ITEMS.register("amber_sword",
+            () -> new AmberSwordItem(ToolTiers.AMBER, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+
+    public static final RegistryObject<AxeItem> AMBER_AXE = ITEMS.register("amber_axe",
+            () ->  new AxeItem(ToolTiers.AMBER, 7, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
 
 
 
@@ -184,8 +190,8 @@ public class ModItems {
         public static final Tier CELESTINE = new ForgeTier(5, 1200, 10f, 0, 8, null, () -> Ingredient.of(ModItems.CELESTINE_CRYSTAL.get()));
         public static final Tier LUNITE = new ForgeTier(5, -1, 8f, 0, 8, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final Tier BAMBOO = new ForgeTier(1, 20, 8f, 0, 0, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
-
         public static final Tier DOOM = new ForgeTier(1, 100, 8f, 0, 5, null, () -> Ingredient.of(Items.MAGMA_CREAM));
+        public static final Tier AMBER = new ForgeTier(3, 555, 8f, 0, 10, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
 
     }

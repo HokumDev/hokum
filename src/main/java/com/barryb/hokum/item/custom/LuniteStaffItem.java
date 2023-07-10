@@ -34,7 +34,7 @@ public class LuniteStaffItem extends StaffItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
+        if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
             var validTP1 = getValidTP(level, player, ClipContext.Fluid.NONE, 10);
             var posit = validTP1.getBlockPos();
             int ly = (int) level.clip(new ClipContext(Vec3.atBottomCenterOf(posit).add(0, 3, 0), Vec3.atBottomCenterOf(posit), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, null)).getLocation().y;

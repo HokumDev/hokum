@@ -93,7 +93,58 @@ public class ModBlocks {
     public static final RegistryObject<Block> AMBER_SCAFFOLDING = BLOCKS.register("amber_scaffolding",
             () -> new AmberScaffoldingBlock(BlockBehaviour.Properties.of(Material.GLASS)
                     .instabreak().requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AMBER_GEMLIGHT = registerBlock("amber_gemlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> DIAMOND_GEMLIGHT = registerBlock("diamond_gemlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> EMERALD_GEMLIGHT = registerBlock("emerald_gemlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> GOLD_GEMLIGHT = registerBlock("gold_gemlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> LAPIS_GEMLIGHT = registerBlock("lapis_gemlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> LUNITE_GEMLIGHT = registerBlock("lunite_gemlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> REDSTONE_GEMLIGHT = registerBlock("redstone_gemlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> ROSE_GOLD_GEMLIGHT = registerBlock("rose_gold_gemlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> AMBER_PICKAXE = registerBlock("amber_pickaxe",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
+                        return 15;
+                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

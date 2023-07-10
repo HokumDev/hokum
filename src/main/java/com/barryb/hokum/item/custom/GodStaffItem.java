@@ -27,14 +27,14 @@ public class GodStaffItem extends StaffItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
-            if(player.isOnGround()){
+        if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
+            if (player.isOnGround()) {
                 player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 20, 20), player);
                 player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 150, 0), player);
                 player.level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENDER_DRAGON_FLAP, SoundSource.PLAYERS, 1.0f, 1.0f);
                 player.getCooldowns().addCooldown(this, 20);
                 player.awardStat(Stats.ITEM_USED.get(this));
-            }else{
+            } else {
                 var validTP1 = getValidTP(level, player, ClipContext.Fluid.NONE, 50);
                 var posit = validTP1.getBlockPos();
                 int ly = (int) level.clip(new ClipContext(Vec3.atBottomCenterOf(posit).add(0, 3, 0), Vec3.atBottomCenterOf(posit), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, null)).getLocation().y;
