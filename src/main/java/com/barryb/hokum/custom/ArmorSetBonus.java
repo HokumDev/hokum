@@ -23,7 +23,7 @@ public class ArmorSetBonus {
         this.requiredItems.add(item);
     }
 
-    public boolean hasFullSetEquipped(LivingEntity player) {
+    public int hasFullSetEquipped(LivingEntity player) {
         int count = 0;
         for (ItemStack itemStack : player.getArmorSlots()) {
             if (itemStack.getItem() instanceof ArmorItem) {
@@ -33,11 +33,11 @@ public class ArmorSetBonus {
                 }
             }
         }
-        return count >= requiredSetSize;
+        return count;
     }
 
     public void applySetBonus(LivingEntity player) {
-        if (hasFullSetEquipped(player)) {
+        if (hasFullSetEquipped(player) == 4) {
             setBonusAction.run();
         }
     }
