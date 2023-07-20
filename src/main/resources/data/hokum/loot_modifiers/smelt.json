@@ -3,12 +3,7 @@
     {
       "condition": "minecraft:match_tool",
       "predicate": {
-        "items": [
-          {
-            "items": "hokum:amber_axe"
-            }
-
-        ]
+        "tag": "hokum:autosmelters"
       }
     }
   ],

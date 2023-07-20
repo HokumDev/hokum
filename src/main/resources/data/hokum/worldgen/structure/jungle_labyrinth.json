@@ -6,7 +6,7 @@
   "biomes": "#minecraft:is_jungle",
   "step": "surface_structures",
   "start_height": {
-    "absolute": -40
+    "absolute": -50
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
 
@@ -19,8 +19,8 @@
         {
           "type": "hokum:widow",
           "weight": 1,
-          "minCount": 1,
-          "maxCount": 3
+          "minCount": 2,
+          "maxCount": 4
         }
       ]
     }

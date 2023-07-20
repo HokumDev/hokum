@@ -69,7 +69,9 @@ public class BambooStaffItem extends BlockItem {
 
                     }
 
+
                     return InteractionResult.sidedSuccess(level.isClientSide);
+
                 }
             }
         }

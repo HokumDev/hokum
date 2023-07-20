@@ -5,6 +5,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
@@ -30,9 +31,9 @@ public class Widow extends Spider {
 
     public static AttributeSupplier setAttributes() {
         return Spider.createAttributes()
-                .add(Attributes.MAX_HEALTH, 12.0D)
+                .add(Attributes.MAX_HEALTH, 13.0D)
                 .add(Attributes.ATTACK_DAMAGE, 1.0f)
-                .add(Attributes.MOVEMENT_SPEED, 0.4f)
+                .add(Attributes.MOVEMENT_SPEED, 0.35f)
                 .add(Attributes.ATTACK_SPEED, 0.5f).build();
     }
 
@@ -66,5 +67,15 @@ public class Widow extends Spider {
     @Override
     protected float getStandingEyeHeight(Pose poseIn, EntityDimensions sizeIn) {
         return 0.50F;
+    }
+
+
+    @Override
+    public boolean hurt(DamageSource dmgsrc, float p_19947_) {
+        if(dmgsrc == DamageSource.IN_FIRE || dmgsrc == DamageSource.ON_FIRE || dmgsrc == DamageSource.LAVA)
+        {
+            return false;
+        }
+        return super.hurt(dmgsrc, p_19947_);
     }
 }

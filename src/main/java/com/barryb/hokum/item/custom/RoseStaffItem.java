@@ -19,22 +19,14 @@ public class RoseStaffItem extends StaffItem {
         super(tier, attackMod, attackSpeedMod, props);
     }
 
-    @Override
-    public boolean hurtEnemy(ItemStack iStack, LivingEntity target, LivingEntity attacker){
-        if (!target.isInvertedHealAndHarm()) {
-            target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 400, 2), attacker);
-        }
-
-        return super.hurtEnemy(iStack, target, attacker);
-    }
 
     @Override
     public InteractionResult interactLivingEntity(ItemStack itemStack, Player player, LivingEntity target, InteractionHand interactionHand) {
         if (!target.isInvertedHealAndHarm() && !player.getCooldowns().isOnCooldown(itemStack.getItem())) {
-            target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 400, 2), player);
+            target.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), player);
             player.awardStat(Stats.ITEM_USED.get(itemStack.getItem()));
             player.level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 1.0f, 1.0f);
-            player.getCooldowns().addCooldown(this, 15);
+            player.getCooldowns().addCooldown(this, 80);
 
         }
 

@@ -8,11 +8,26 @@
       }
     ]
   },
+  "record_stal": {
+    "sounds": [
+      {
+        "name": "hokum:record_stal",
+        "stream": true
+
+      }
+    ]
+  },
 
   "celestine_fall": {
     "subtitle": "sounds.hokum.celestine_break_fall",
     "sounds": [
       "hokum:celestine_fall"
+    ]
+  },
+  "wow_crit": {
+    "subtitle": "sounds.hokum.wow_crit",
+    "sounds": [
+      "hokum:wow_crit"
     ]
   }
 }

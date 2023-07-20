@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "hokum:block/jungle_bricks",
+    "top": "hokum:block/jungle_bricks",
+    "side": "hokum:block/jungle_bricks"
+  }
+}

@@ -5,11 +5,29 @@
 {
   "weight": 1,
   "element": {
-  "location": "hokum:jungle_labyrinth_1",
+  "location": "hokum:jungle_labyrinth_tower",
   "processors": "minecraft:empty",
   "projection": "rigid",
   "element_type": "minecraft:single_pool_element"
 }
-}
-]
+},
+    {
+      "weight": 1,
+      "element": {
+        "location": "hokum:jungle_labyrinth_pyramid",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "hokum:jungle_labyrinth_lush",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
 }
