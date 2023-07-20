@@ -3,6 +3,11 @@
   "values": [
     "hokum:lunite_ore",
     "hokum:celestine_block",
-    "hokum:lunite_block"
+    "hokum:lunite_block",
+    "hokum:jungle_bricks",
+    "hokum:jungle_brick_slab",
+    "hokum:jungle_brick_stairs",
+    "hokum:jungle_dispenser",
+    "hokum:mossy_jungle_bricks"
   ]
 }

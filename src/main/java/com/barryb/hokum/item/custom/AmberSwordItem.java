@@ -21,7 +21,7 @@ public class AmberSwordItem extends SwordItem {
     public boolean hurtEnemy(ItemStack iStack, LivingEntity target, LivingEntity attacker){
         if(target.hasEffect(MobEffects.GLOWING))
         {
-            target.hurt(DamageSource.mobAttack(attacker), 8);
+            target.hurt(ModDamageSources.marked(attacker), 8);
         }
 
 
@@ -29,4 +29,6 @@ public class AmberSwordItem extends SwordItem {
         return super.hurtEnemy(iStack, target, attacker);
 
     }
+
+
 }

@@ -2,7 +2,8 @@
   "replace": false,
   "values": [
     "hokum:rose_gold_block",
-    "hokum:lunite_block"
+    "hokum:lunite_block",
+    "hokum:amber_block"
 
   ]
 }

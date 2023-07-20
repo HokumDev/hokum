@@ -222,22 +222,20 @@ public class ModItems {
         public static final Tier LUNITE = new ForgeTier(5, -1, 8f, 0, 8, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final Tier BAMBOO = new ForgeTier(1, 20, 8f, 0, 0, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final Tier DOOM = new ForgeTier(1, 100, 8f, 0, 5, null, () -> Ingredient.of(Items.MAGMA_CREAM));
-        public static final Tier AMBER = new ForgeTier(3, 777, 4f, 0, 10, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
-
-        public static final Tier AMBER_HOE = new ForgeTier(3, 999, 4f, 0, 10, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
+        public static final Tier AMBER = new ForgeTier(3, 777, 4f, 0, 10, null, () -> Ingredient.of(ModItems.AMBER.get()));
 
     }
 
     public static class ArmorTiers {
         public static final ArmorMaterial ROSE_GOLD = new com.barryb.hokum.custom.ArmorMaterials("rose_gold", 12, new int[] {2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD,1, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final ArmorMaterial ROSE_GOLD_CROWN = new com.barryb.hokum.custom.ArmorMaterials("rose_crown", 12, new int[] {1, 1, 1, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
-        public static final ArmorMaterial CELESTINE = new ArmorMaterials("celestine", 31, new int[] {3, 6, 8, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
-        public static final ArmorMaterial CELESTINE_CROWN = new ArmorMaterials("celestine_crown", 31, new int[] {1, 1, 1, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
+        public static final ArmorMaterial CELESTINE = new ArmorMaterials("celestine", 31, new int[] {3, 6, 8, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.CELESTINE_DUST.get()));
+        public static final ArmorMaterial CELESTINE_CROWN = new ArmorMaterials("celestine_crown", 31, new int[] {1, 1, 1, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.CELESTINE_DUST.get()));
         public static final ArmorMaterial LUNITE = new com.barryb.hokum.custom.ArmorMaterials("lunite", -1, new int[] {3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 3, 0.3f, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final ArmorMaterial LUNITE_CROWN = new ArmorMaterials("lunite_crown", -1, new int[] {1, 1, 1, 3}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 3, 0.3f, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
-        public static final ArmorMaterial AMBER = new ArmorMaterials("amber", 28, new int[] {2, 3, 4, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
-        public static final ArmorMaterial AMBER_CROWN = new ArmorMaterials("amber_crown", 28, new int[] {0, 0, 0, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
+        public static final ArmorMaterial AMBER = new ArmorMaterials("amber", 28, new int[] {2, 3, 4, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.AMBER.get()));
+        public static final ArmorMaterial AMBER_CROWN = new ArmorMaterials("amber_crown", 28, new int[] {0, 0, 0, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.AMBER.get()));
 
         public static final FlowerCrownMaterial BLINDFOLD = new FlowerCrownMaterial("blindfold", () -> Ingredient.of(ItemTags.WOOL));
 

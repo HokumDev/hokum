@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "X": {
+      "item": "hokum:amber"
+    },
+    "C": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " CX",
+    " #C",
+    "#  "
+  ],
+  "result": {
+    "item": "hokum:amber_staff"
+  }
+}
