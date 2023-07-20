@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:glow_ink_sac"
+    },
+    "X": {
+      "item": "minecraft:emerald"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "#G#",
+    "GXG",
+    "#G#"
+  ],
+  "result": {
+    "item": "hokum:emerald_gemlight"
+  }
+}

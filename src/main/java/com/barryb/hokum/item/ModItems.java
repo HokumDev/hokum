@@ -112,15 +112,15 @@ public class ModItems {
     public static final RegistryObject<Item> CELESTINE_CRYSTAL = ITEMS.register("celestine_crystal",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
     public static final RegistryObject<ModArmorItem> CELESTINE_HELMET = ITEMS.register("celestine_helmet",
-            () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.HEAD, 0.02, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.HEAD, 0.02, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> CELESTINE_CHESTPLATE = ITEMS.register("celestine_chestplate",
-            () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.CHEST, 0.02, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.CHEST, 0.02, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> CELESTINE_LEGGINGS = ITEMS.register("celestine_leggings",
-            () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.LEGS, 0.02, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.LEGS, 0.02, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> CELESTINE_BOOTS = ITEMS.register("celestine_boots",
-            () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.FEET, 0.02, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.FEET, 0.02, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> CELESTINE_CROWN = ITEMS.register("celestine_crown",
-            () -> new ModArmorItem(ArmorTiers.CELESTINE_CROWN, EquipmentSlot.HEAD, 0.02, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.CELESTINE_CROWN, EquipmentSlot.HEAD, 0.02, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
 
     public static final RegistryObject<Item> RECORD_CHIRP = ITEMS.register("record_chirp",
@@ -150,21 +150,22 @@ public class ModItems {
             () -> new LuniteStaffItem(ToolTiers.LUNITE, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
     public static final RegistryObject<ModArmorItem> LUNITE_HELMET = ITEMS.register("lunite_helmet",
-            () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.HEAD, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.HEAD, 0, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> LUNITE_CHESTPLATE = ITEMS.register("lunite_chestplate",
-            () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.CHEST, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.CHEST, 0, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> LUNITE_LEGGINGS = ITEMS.register("lunite_leggings",
-            () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.LEGS, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.LEGS, 0, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> LUNITE_BOOTS = ITEMS.register("lunite_boots",
-            () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.FEET, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+            () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.FEET, 0, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<ModArmorItem> LUNITE_CROWN = ITEMS.register("lunite_crown",
-            () -> new ModArmorItem(ArmorTiers.LUNITE_CROWN, EquipmentSlot.HEAD, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-
-    public static final RegistryObject<SwordItem> GOD_STAFF = ITEMS.register("god_staff",
-            () -> new GodStaffItem(ToolTiers.CELESTINE, 0, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+            () -> new ModArmorItem(ArmorTiers.LUNITE_CROWN, EquipmentSlot.HEAD, 0, 0, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> WIDOW_SPAWN_EGG = ITEMS.register("widow_spawn_egg",
             () -> new ForgeSpawnEggItem(ModMobs.WIDOW, 0x100700, 0xef9805,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<Item> AMBER = ITEMS.register("amber",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+
 
     public static final RegistryObject<Item> AMBER_STAFF = ITEMS.register("amber_staff",
             () -> new BambooStaffItem(ModBlocks.AMBER_SCAFFOLDING.get(), new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
@@ -177,7 +178,37 @@ public class ModItems {
     public static final RegistryObject<AxeItem> AMBER_AXE = ITEMS.register("amber_axe",
             () ->  new AxeItem(ToolTiers.AMBER, 7, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
+    public static final RegistryObject<PickaxeItem> AMBER_PICKAXE = ITEMS.register("amber_pickaxe",
+            () ->  new PickaxeItem(ToolTiers.AMBER, 4, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
 
+    public static final RegistryObject<ShovelItem> AMBER_SHOVEL = ITEMS.register("amber_shovel",
+            () ->  new ShovelItem(ToolTiers.AMBER, 4, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
+    public static final RegistryObject<HoeItem> AMBER_HOE = ITEMS.register("amber_hoe",
+            () ->  new HoeItem(ToolTiers.AMBER, 1, 0f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
+    public static final RegistryObject<Item> WIDOW_EYE = ITEMS.register("widow_eye",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_BREWING).food(Foodstuffs.WIDOW_EYE)));
+
+    public static final RegistryObject<StaffItem> SPIDER_STAFF = ITEMS.register("spider_staff",
+            () -> new SpiderStaffItem(ToolTiers.AMBER, 8, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
+    public static final RegistryObject<StaffItem> NETHERITE_STAFF = ITEMS.register("netherite_staff",
+            () -> new NetheriteStaffItem(Tiers.NETHERITE, 2, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+
+
+    //
+
+    public static final RegistryObject<ModArmorItem> AMBER_HELMET = ITEMS.register("amber_helmet",
+            () -> new ModArmorItem(ArmorTiers.AMBER, EquipmentSlot.HEAD, 0, 3, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<ModArmorItem> AMBER_CHESTPLATE = ITEMS.register("amber_chestplate",
+            () -> new ModArmorItem(ArmorTiers.AMBER, EquipmentSlot.CHEST, 0, 8, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<ModArmorItem> AMBER_LEGGINGS = ITEMS.register("amber_leggings",
+            () -> new ModArmorItem(ArmorTiers.AMBER, EquipmentSlot.LEGS, 0, 6, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<ModArmorItem> AMBER_BOOTS = ITEMS.register("amber_boots",
+            () -> new ModArmorItem(ArmorTiers.AMBER, EquipmentSlot.FEET, 0, 3, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<ModArmorItem> AMBER_CROWN = ITEMS.register("amber_crown",
+            () -> new ModArmorItem(ArmorTiers.AMBER_CROWN, EquipmentSlot.HEAD, 0, 3, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
 
 
@@ -191,8 +222,9 @@ public class ModItems {
         public static final Tier LUNITE = new ForgeTier(5, -1, 8f, 0, 8, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final Tier BAMBOO = new ForgeTier(1, 20, 8f, 0, 0, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final Tier DOOM = new ForgeTier(1, 100, 8f, 0, 5, null, () -> Ingredient.of(Items.MAGMA_CREAM));
-        public static final Tier AMBER = new ForgeTier(3, 555, 8f, 0, 10, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
+        public static final Tier AMBER = new ForgeTier(3, 777, 4f, 0, 10, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
+        public static final Tier AMBER_HOE = new ForgeTier(3, 999, 4f, 0, 10, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
     }
 
@@ -203,6 +235,9 @@ public class ModItems {
         public static final ArmorMaterial CELESTINE_CROWN = new ArmorMaterials("celestine_crown", 31, new int[] {1, 1, 1, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
         public static final ArmorMaterial LUNITE = new com.barryb.hokum.custom.ArmorMaterials("lunite", -1, new int[] {3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 3, 0.3f, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final ArmorMaterial LUNITE_CROWN = new ArmorMaterials("lunite_crown", -1, new int[] {1, 1, 1, 3}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 3, 0.3f, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
+
+        public static final ArmorMaterial AMBER = new ArmorMaterials("amber", 28, new int[] {2, 3, 4, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
+        public static final ArmorMaterial AMBER_CROWN = new ArmorMaterials("amber_crown", 28, new int[] {0, 0, 0, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
 
         public static final FlowerCrownMaterial BLINDFOLD = new FlowerCrownMaterial("blindfold", () -> Ingredient.of(ItemTags.WOOL));
 
@@ -222,6 +257,8 @@ public class ModItems {
 
     public static class Foodstuffs {
         public static final FoodProperties ROSE_GOLD_CARROT = new FoodProperties.Builder().nutrition(6).saturationMod(1.1f).alwaysEat().effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 60, 0), 1.0f).build();
+        public static final FoodProperties WIDOW_EYE = new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).alwaysEat().effect(() -> new MobEffectInstance(MobEffects.POISON, 120, 2), 1.0f).build();
+
     }
 }
 

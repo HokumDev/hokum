@@ -25,7 +25,7 @@ public class ModArmorItem extends ArmorItem {
     protected final ArmorMaterial material;
 
 
-    public ModArmorItem(ArmorMaterial p_40386_, EquipmentSlot p_40387_, double speedBoost, Properties p_40388_) {
+    public ModArmorItem(ArmorMaterial p_40386_, EquipmentSlot p_40387_, double speedBoost, int maxHealth, Properties p_40388_) {
         super(p_40386_, p_40387_, p_40388_);
         this.material = p_40386_;
         this.slot = p_40387_;
@@ -41,6 +41,7 @@ public class ModArmorItem extends ArmorItem {
         }
         builder.put(Attributes.MOVEMENT_SPEED, new AttributeModifier(uuid, "Speed Modifier", speedBoost, AttributeModifier.Operation.ADDITION));
 
+        builder.put(Attributes.MAX_HEALTH, new AttributeModifier(uuid, "Max Health", maxHealth, AttributeModifier.Operation.ADDITION));
 
         this.defaultModifiers = builder.build();
     }

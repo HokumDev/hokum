@@ -3,6 +3,7 @@ package com.barryb.hokum.block;
 import com.barryb.hokum.Hokum;
 import com.barryb.hokum.block.custom.AmberScaffoldingBlock;
 import com.barryb.hokum.block.custom.CelestineBlock;
+import com.barryb.hokum.block.custom.ModPressurePlateBlock;
 import com.barryb.hokum.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -64,22 +65,29 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(2.0f, 18).requiresCorrectToolForDrops()
             ), CreativeModeTab.TAB_BUILDING_BLOCKS);
-
     public static final RegistryObject<Block> POLISHED_BARITE_SLAB = registerBlock("polished_barite_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(2.0f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
-
-
-
     public static final RegistryObject<Block> JUNGLE_BRICKS = registerBlock("jungle_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(100f, 30).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<StairBlock> JUNGLE_BRICK_STAIRS = registerBlock("jungle_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.JUNGLE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(100f, 30).requiresCorrectToolForDrops()
+            ), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
+    public static final RegistryObject<Block> JUNGLE_BRICK_SLAB = registerBlock("jungle_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2.0f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
     public static final RegistryObject<Block> MOSSY_JUNGLE_BRICKS = registerBlock("mossy_jungle_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(100f, 30).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     public static final RegistryObject<Block> JUNGLE_BRICK_PRESSURE_PLATE = registerBlock("jungle_brick_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.STONE)
+            () -> new ModPressurePlateBlock(ModPressurePlateBlock.Sensitivity.PLAYERS, BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_REDSTONE);
 
     public static final RegistryObject<Block> JUNGLE_DISPENSER = registerBlock("jungle_dispenser",
@@ -135,12 +143,6 @@ public class ModBlocks {
                     })), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     public static final RegistryObject<Block> ROSE_GOLD_GEMLIGHT = registerBlock("rose_gold_gemlight",
-            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
-                    .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
-                        return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
-
-    public static final RegistryObject<Block> AMBER_PICKAXE = registerBlock("amber_pickaxe",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;

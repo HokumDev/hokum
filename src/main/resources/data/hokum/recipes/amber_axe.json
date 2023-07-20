@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+      "X": {
+        "item": "minecraft:bamboo"
+      },
+      "#": {
+        "item": "hokum:amber"
+      }
+    },
+    "pattern": [
+      "##",
+      "#X",
+      " X"
+    ],
+    "result": {
+      "item": "hokum:amber_axe"
+    }
+  }

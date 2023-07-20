@@ -3,7 +3,10 @@ package com.barryb.hokum;
 import com.barryb.hokum.block.ModBlocks;
 import com.barryb.hokum.client.renderer.entity.MommyRenderer;
 import com.barryb.hokum.client.renderer.entity.WidowRenderer;
+import com.barryb.hokum.custom.LootModifiers;
 import com.barryb.hokum.entity.ModMobs;
+import com.barryb.hokum.entity.effects.ModEffects;
+import com.barryb.hokum.item.ModPotions;
 import com.barryb.hokum.sound.ModSounds;
 import com.barryb.hokum.world.feature.ModConfiguredFeatures;
 import com.barryb.hokum.world.feature.ModPlacedFeatures;
@@ -42,14 +45,6 @@ public class Hokum
     public static final String MODID = "hokum";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
-    // Create a Deferred Register to hold Items which will all be registered under the "examplemod" namespace
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-
-    // Creates a new Block with the id "examplemod:example_block", combining the namespace and path
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
-
     public Hokum()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -60,6 +55,12 @@ public class Hokum
         ModMobs.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
+        LootModifiers.register(modEventBus);
+        ModPotions.register(modEventBus);
+        ModEffects.register(modEventBus);
+
+
+
 
 
 
@@ -98,8 +99,8 @@ public class Hokum
         {
             EntityRenderers.register(ModMobs.WIDOW.get(), WidowRenderer::new);
             EntityRenderers.register(ModMobs.MOMMY.get(), MommyRenderer::new);
-
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.AMBER_SCAFFOLDING.get(), RenderType.translucent());
+
 
 
         }

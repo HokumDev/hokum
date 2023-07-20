@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hokum:block/jungle_brick_slab"
+    },
+    "type=double": {
+      "model": "hokum:block/jungle_bricks"
+    },
+    "type=top": {
+      "model": "hokum:block/jungle_brick_slab_top"
+    }
+  }
+}

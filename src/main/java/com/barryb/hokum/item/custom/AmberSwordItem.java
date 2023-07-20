@@ -1,6 +1,7 @@
 package com.barryb.hokum.item.custom;
 
 import com.barryb.hokum.custom.ModDamageSources;
+import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -20,8 +21,10 @@ public class AmberSwordItem extends SwordItem {
     public boolean hurtEnemy(ItemStack iStack, LivingEntity target, LivingEntity attacker){
         if(target.hasEffect(MobEffects.GLOWING))
         {
-            target.hurt(DamageSource.ANVIL, 4);
+            target.hurt(DamageSource.mobAttack(attacker), 8);
         }
+
+
         target.addEffect(new MobEffectInstance(MobEffects.GLOWING, 140, 0), attacker);
         return super.hurtEnemy(iStack, target, attacker);
 

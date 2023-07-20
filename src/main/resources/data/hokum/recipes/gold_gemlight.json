@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:glow_ink_sac"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "#G#",
+    "GXG",
+    "#G#"
+  ],
+  "result": {
+    "count": 4,
+
+    "item": "hokum:gold_gemlight"
+  }
+}

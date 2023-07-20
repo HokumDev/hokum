@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:glow_ink_sac"
+    },
+    "X": {
+      "item": "hokum:amber"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "#G#",
+    "GXG",
+    "#G#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "hokum:amber_gemlight"
+  }
+}

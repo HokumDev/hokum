@@ -5,6 +5,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
@@ -20,6 +21,9 @@ import javax.annotation.Nullable;
 public class MommyLongFangs extends Spider {
     public MommyLongFangs(EntityType<? extends Spider> type, Level worldIn) {
         super(type, worldIn);
+        this.xpReward = 30;
+
+
     }
 
     public static boolean canSpawn(EntityType<? extends Monster> type, ServerLevelAccessor worldIn, MobSpawnType reason, BlockPos pos, RandomSource randomIn) {
@@ -30,10 +34,12 @@ public class MommyLongFangs extends Spider {
 
     public static AttributeSupplier setAttributes() {
         return Spider.createAttributes()
-                .add(Attributes.MAX_HEALTH, 200.0D)
-                .add(Attributes.ATTACK_DAMAGE, 3.0f)
-                .add(Attributes.MOVEMENT_SPEED, 0.33f)
-                .add(Attributes.ATTACK_SPEED, 1f).build();
+                .add(Attributes.MAX_HEALTH, 400.0D)
+                .add(Attributes.ATTACK_DAMAGE, 5.0f)
+                .add(Attributes.MOVEMENT_SPEED, 0.35f)
+                .add(Attributes.ATTACK_SPEED, 1f)
+                .add(Attributes.ATTACK_KNOCKBACK, 2f)
+                .add(Attributes.KNOCKBACK_RESISTANCE, 10f).build();
     }
 
     @Override
@@ -42,13 +48,13 @@ public class MommyLongFangs extends Spider {
             if (entity instanceof LivingEntity livingEntity) {
                 int i = 0;
                 if (this.level.getDifficulty() == Difficulty.NORMAL) {
-                    i = 7;
+                    i = 4;
                 } else if (this.level.getDifficulty() == Difficulty.HARD) {
-                    i = 15;
+                    i = 7;
                 }
 
                 if (i > 0) {
-                    ((LivingEntity)entity).addEffect(new MobEffectInstance(MobEffects.POISON, i * 20, 0), this);
+                    ((LivingEntity)entity).addEffect(new MobEffectInstance(MobEffects.POISON, i * 20, 2), this);
                 }
             }
             return true;
@@ -67,4 +73,24 @@ public class MommyLongFangs extends Spider {
     protected float getStandingEyeHeight(Pose poseIn, EntityDimensions sizeIn) {
         return 0.50F;
     }
+
+    @Override
+    public void checkDespawn() {
+        if (this.level.getDifficulty() == Difficulty.PEACEFUL && this.shouldDespawnInPeaceful()) {
+            this.discard();
+        } else {
+            this.noActionTime = 0;
+        }
+    }
+
+    @Override
+    public boolean hurt(DamageSource dmgsrc, float p_19947_) {
+        if(dmgsrc == DamageSource.IN_FIRE || dmgsrc == DamageSource.ON_FIRE || dmgsrc == DamageSource.LAVA)
+        {
+            return false;
+        }
+        return super.hurt(dmgsrc, p_19947_);
+    }
+
+
 }

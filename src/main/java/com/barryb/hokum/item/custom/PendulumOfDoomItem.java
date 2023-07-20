@@ -40,7 +40,7 @@ public class PendulumOfDoomItem extends AxeItem {
             int randomNumber = (int) (Math.random() * 5) + 1;
             if(randomNumber == 4){
                 dmg = 30;
-                target.level.playSound(null, target.getX(), target.getY(), target.getZ(), ModSounds.WOW_CRIT.get(), SoundSource.PLAYERS, 1.0f, 1.0f);
+                target.level.playSound(null, target.getX(), target.getY(), target.getZ(), ModSounds.WOW_CRIT.get(), SoundSource.PLAYERS, 2.0f, 1.0f);
 
             }
             attacker.sendSystemMessage(Component.literal("Dealing damage for : " + dmg));
