@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:astral_armors_root",
+  "criteria": {
+    "lunite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:lunite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "From the bottom of End Islands...",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:lunite_ingot"
+    },
+    "show_toast": true,
+    "title": "Void Miner"
+  },
+  "requirements": [
+    [
+      "lunite"
+    ]
+  ]
+}

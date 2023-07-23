@@ -1,0 +1,71 @@
+{
+  "parent": "hokum:flower_crown",
+  "criteria": {
+    "all_flower_crowns": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:red_flower_crown"
+            ]
+          },
+          {
+            "items": [
+              "hokum:orange_flower_crown"
+            ]
+          },
+          {
+            "items": [
+              "hokum:yellow_flower_crown"
+            ]
+          },
+          {
+            "items": [
+              "hokum:blue_flower_crown"
+            ]
+          },
+          {
+            "items": [
+              "hokum:purple_flower_crown"
+            ]
+          },
+          {
+            "items": [
+              "hokum:pink_flower_crown"
+            ]
+          },
+          {
+            "items": [
+              "hokum:white_flower_crown"
+            ]
+          },
+          {
+            "items": [
+              "hokum:black_flower_crown"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Collect every variant of flower crown",
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:black_flower_crown"
+    },
+    "show_toast": true,
+    "title": "A Home For Flowers"
+  },
+  "requirements": [
+    [
+      "all_flower_crowns"
+    ]
+  ],
+  "rewards": {
+    "experience": 75
+  }
+}

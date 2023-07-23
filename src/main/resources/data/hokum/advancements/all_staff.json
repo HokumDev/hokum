@@ -1,0 +1,61 @@
+{
+  "parent": "hokum:netherite_staff",
+  "criteria": {
+    "all_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:lunite_staff"
+            ]
+          },
+          {
+            "items": [
+              "hokum:celestine_staff"
+            ]
+          },
+          {
+            "items": [
+              "hokum:amber_staff"
+            ]
+          },
+          {
+            "items": [
+              "hokum:rose_gold_staff"
+            ]
+          },
+          {
+            "items": [
+              "hokum:netherite_staff"
+            ]
+          },
+          {
+            "items": [
+              "hokum:spider_staff"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Collect every single staff",
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:celestine_staff"
+    },
+    "show_toast": true,
+    "title": "Archmage"
+  },
+  "requirements": [
+    [
+      "all_staff"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "hokum:astral_armors_root",
+  "criteria": {
+    "flower_crown": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "hokum:flower_crowns"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Craft a Flower Crown",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:white_flower_crown",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": "Achooooo!"
+  },
+  "requirements": [
+    [
+      "flower_crown"
+    ]
+  ]
+}

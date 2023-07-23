@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:astral_armors_root",
+  "criteria": {
+    "rose_gold": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:rose_gold"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Craft a Rose Gold Ingot from Copper and Gold",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:rose_gold"
+    },
+    "show_toast": true,
+    "title": "Gold n Roses"
+  },
+  "requirements": [
+    [
+      "rose_gold"
+    ]
+  ]
+}

@@ -141,6 +141,10 @@
         },
         {
           "type": "minecraft:item",
+          "name": "hokum:record_chirp"
+        },
+        {
+          "type": "minecraft:item",
           "name": "hokum:amber_leggings"
         },
         {

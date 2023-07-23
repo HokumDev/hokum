@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:amber",
+  "criteria": {
+    "amber_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:amber_staff"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Violate the laws of matter conservation with an Amber Staff",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:amber_staff"
+    },
+    "show_toast": true,
+    "title": "Infinite Amber?"
+  },
+  "requirements": [
+    [
+      "amber_staff"
+    ]
+  ]
+}

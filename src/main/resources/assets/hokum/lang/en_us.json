@@ -63,6 +63,11 @@
   "item.hokum.amber_boots": "Amber Boots",
   "item.hokum.amber_crown": "Amber Crown",
   "item.hokum.widow_eye": "Widow Eye",
+  "item.hokum.amber": "Amber",
+  "item.hokum.netherite_staff": "Netherite Staff",
+  "item.hokum.diamond_crown": "Diamond Crown",
+  "item.hokum.netherite_crown": "Netherite Crown",
+  "item.hokum.spider_staff": "Spider Staff",
 
 
 
@@ -96,9 +101,10 @@
   "block.hokum.lunite_gemlight": "Lunite Gemlight",
   "block.hokum.redstone_gemlight": "Redstone Gemlight",
   "block.hokum.rose_gold_gemlight": "Rose Gold Gemlight",
+  "block.hokum.amber_block": "Block of Amber",
 
   "entity.hokum.widow": "Widow",
-  "entity.hokum.mommy_long_legs": "Mommy Long Legs",
+  "entity.hokum.mommy_long_fangs": "Mommy Long Fangs",
 
   "item.minecraft.potion.effect.widow_potion": "Potion of Poison",
   "item.minecraft.splash_potion.effect.widow_potion": "Splash Potion of Poison",
@@ -117,5 +123,53 @@
 
 
   "item.hokum.record_chirp": "Chirp Record",
-  "item.hokum.record_chirp.desc": "Koltino - Chirp"
+  "item.hokum.record_chirp.desc": "Koltino - Chirp",
+
+  "hokum.advancements.all_flower_crowns.title": "A Home For Flowers",
+  "hokum.advancements.all_flower_crowns.description": "Collect every single flower crown",
+  "hokum.advancements.all_staff.title": "Archmage",
+  "hokum.advancements.all_staff.description": "Collect every single staff",
+  "hokum.advancements.amber.title": "Tomb Raider",
+  "hokum.advancements.amber.description": "In the ancient temple...",
+  "hokum.advancements.amber_armor.title": "Cover Me In History",
+  "hokum.advancements.amber_armor.description": "Discover a full set of Amber Armor",
+  "hokum.advancements.amber_staff.title": "Infinite Amber?",
+  "hokum.advancements.amber_staff.description": "Violate the laws of matter conservation with Amber Staff",
+  "hokum.advancements.amber_armors_root.title": "Ancient Armors",
+  "hokum.advancements.amber_armors_root.description": "A whole new world",
+  "hokum.advancements.celestine_crystal.title": "Rock Candy",
+  "hokum.advancements.celestine_crystal.description": "From the fragments of an underground sky...",
+  "hokum.advancements.celestine.title": "Sky Alloy",
+  "hokum.advancements.celestine.description": "Forge a celestine ingot from gold and celestine crystal",
+  "hokum.advancements.celestine_armor.title": "Cover Me In Light",
+  "hokum.advancements.celestine_armor.description": "Craft a full set of Celestine Armor",
+  "hokum.advancements.celestine_staff.title": "How's the Weather Up There?",
+  "hokum.advancements.celestine_staff.description": "Craft a Celestine Staff",
+  "hokum.advancements.flower_crown.title": "Achooooo!!",
+  "hokum.advancements.flower_crown.description": "Make a Flower Crown!",
+  "hokum.advancements.kill_mommy.title": "\"Mommy? Sorry\"",
+  "hokum.advancements.kill_mommy.description": "Defeat the queen of the jungle",
+  "hokum.advancements.labyrinth.title": "Ancient Architecture",
+  "hokum.advancements.labyrinth.description": "Discover a Jungle Labyrinth",
+  "hokum.advancements.lunite.title": "Void Miner",
+  "hokum.advancements.lunite.description": "Under the Ender Islands...",
+  "hokum.advancements.lunite_armor.title": "Cover Me In Night",
+  "hokum.advancements.lunite_armor.description": "Don a full set of Lunite Armor",
+  "hokum.advancements.lunite_staff.title": "Shadow Wizard",
+  "hokum.advancements.lunite_staff.description": "We love casting spells",
+  "hokum.advancements.netherite_staff.title": "Nether Mage",
+  "hokum.advancements.netherite_staff.description": "Crumble armor with the Netherite Staff",
+  "hokum.advancements.rose_gold.title": "Gold n Roses",
+  "hokum.advancements.rose_gold.description": "Craft a Rose Gold Ingot from Copper and Gold",
+  "hokum.advancements.rose_gold_armor.title": "Pretty in Pink",
+  "hokum.advancements.rose_gold_armor.description": "Rock a full set of Rose Gold Armor",
+  "hokum.advancements.rose_gold_staff.title": "Pretty in Pink",
+  "hokum.advancements.rose_gold_staff.description": "Rock a full set of Rose Gold Armor",
+  "hokum.advancements.rose_gold_staff.title": "Heroes Never Die",
+  "hokum.advancements.rose_gold_staff.description": "Craft a healing Rose Gold Staff",
+
+  "itemGroup.hokumtab": "Hokum - Astral Armors"
+
+
+
 }

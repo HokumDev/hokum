@@ -21,7 +21,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> CELESTINE_GEODE_PLACED = PLACED_FEATURES.register("celestine_geode_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.CELESTINE_GEODE.getHolder().get(), List.of(
-                    RarityFilter.onAverageOnceEvery(90), InSquarePlacement.spread(),
+                    RarityFilter.onAverageOnceEvery(140), InSquarePlacement.spread(),
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(10)),
                     BiomeFilter.biome())));
 

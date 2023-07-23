@@ -3,6 +3,7 @@ package com.barryb.hokum;
 import com.barryb.hokum.block.ModBlocks;
 import com.barryb.hokum.client.renderer.entity.MommyRenderer;
 import com.barryb.hokum.client.renderer.entity.WidowRenderer;
+import com.barryb.hokum.custom.CustomBrewingRecipe;
 import com.barryb.hokum.custom.LootModifiers;
 import com.barryb.hokum.entity.ModMobs;
 import com.barryb.hokum.entity.effects.ModEffects;
@@ -17,12 +18,14 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -80,6 +83,10 @@ public class Hokum
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
+
+        BrewingRecipeRegistry.addRecipe(new CustomBrewingRecipe(Potions.AWKWARD,
+                ModItems.WIDOW_EYE.get(), ModPotions.WIDOW_POTION.get()));
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

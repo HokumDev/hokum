@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:astral_armors_root",
+  "criteria": {
+    "celestine_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:celestine_crystal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "In the fragments of an underground sky...",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:celestine_crystal"
+    },
+    "show_toast": true,
+    "title": "Rock Candy"
+  },
+  "requirements": [
+    [
+      "celestine_crystal"
+    ]
+  ]
+}

@@ -5,6 +5,7 @@ import com.barryb.hokum.block.custom.AmberScaffoldingBlock;
 import com.barryb.hokum.block.custom.CelestineBlock;
 import com.barryb.hokum.block.custom.ModPressurePlateBlock;
 import com.barryb.hokum.item.ModItems;
+import com.barryb.hokum.item.custom.HokumTab;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -27,64 +28,64 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ROSE_GOLD_BLOCK = registerBlock("rose_gold_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(2.5f, 18).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(2.5f, 18).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
     public static final RegistryObject<Block> LUNITE_ORE = registerBlock("lunite_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(2.5f, 18).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(2.5f, 18).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
     public static final RegistryObject<Block> ROSE_GOLD_BRICKS = registerBlock("rose_gold_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(2.5f, 18).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(2.5f, 18).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
     public static final RegistryObject<StairBlock> ROSE_GOLD_BRICK_STAIRS = registerBlock("rose_gold_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.ROSE_GOLD_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.METAL)
                     .strength(2.5f, 18).requiresCorrectToolForDrops()
-                    ), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    ), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> ROSE_GOLD_BRICK_SLAB = registerBlock("rose_gold_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(2.5f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(2.5f).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> CELESTINE_BLOCK = registerBlock("celestine_block",
             () -> new CelestineBlock(BlockBehaviour.Properties.of(Material.AMETHYST)
-                    .strength(1.5f, 18).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(1.5f, 18).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> LUNITE_BLOCK = registerBlock("lunite_block",
             () -> new CelestineBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
-                    .strength(5.0f, 18).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(5.0f, 18).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> BARITE = registerBlock("barite",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(1.5f, 18).requiresCorrectToolForDrops().sound(SoundType.TUFF)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(1.5f, 18).requiresCorrectToolForDrops().sound(SoundType.TUFF)), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> POLISHED_BARITE = registerBlock("polished_barite",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(2.0f, 18).requiresCorrectToolForDrops().sound(SoundType.TUFF)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(2.0f, 18).requiresCorrectToolForDrops().sound(SoundType.TUFF)), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<StairBlock> POLISHED_BARITE_STAIRS = registerBlock("polished_barite_stairs",
             () -> new StairBlock(() -> ModBlocks.POLISHED_BARITE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(2.0f, 18).requiresCorrectToolForDrops()
-            ), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            ), HokumTab.HOKUM_TAB);
     public static final RegistryObject<Block> POLISHED_BARITE_SLAB = registerBlock("polished_barite_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(2.0f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(2.0f).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
     public static final RegistryObject<Block> JUNGLE_BRICKS = registerBlock("jungle_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(100f, 30).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(100f, 30).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<StairBlock> JUNGLE_BRICK_STAIRS = registerBlock("jungle_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.JUNGLE_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(100f, 30).requiresCorrectToolForDrops()
-            ), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            ), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> JUNGLE_BRICK_SLAB = registerBlock("jungle_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(2.0f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(2.0f).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> MOSSY_JUNGLE_BRICKS = registerBlock("mossy_jungle_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(100f, 30).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(100f, 30).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> JUNGLE_BRICK_PRESSURE_PLATE = registerBlock("jungle_brick_pressure_plate",
             () -> new ModPressurePlateBlock(ModPressurePlateBlock.Sensitivity.PLAYERS, BlockBehaviour.Properties.of(Material.STONE)
@@ -92,11 +93,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> JUNGLE_DISPENSER = registerBlock("jungle_dispenser",
             () -> new DispenserBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(100f, 30).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(100f, 30).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> FOOLS_GOLD = registerBlock("fools_gold",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(0.1f, 18).requiresCorrectToolForDrops()), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    .strength(0.1f, 18).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> AMBER_SCAFFOLDING = BLOCKS.register("amber_scaffolding",
             () -> new AmberScaffoldingBlock(BlockBehaviour.Properties.of(Material.GLASS)
@@ -105,48 +106,53 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    })), HokumTab.HOKUM_TAB);
     public static final RegistryObject<Block> DIAMOND_GEMLIGHT = registerBlock("diamond_gemlight",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    })), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> EMERALD_GEMLIGHT = registerBlock("emerald_gemlight",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    })), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> GOLD_GEMLIGHT = registerBlock("gold_gemlight",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    })), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> LAPIS_GEMLIGHT = registerBlock("lapis_gemlight",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    })), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> LUNITE_GEMLIGHT = registerBlock("lunite_gemlight",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    })), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> REDSTONE_GEMLIGHT = registerBlock("redstone_gemlight",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    })), HokumTab.HOKUM_TAB);
 
     public static final RegistryObject<Block> ROSE_GOLD_GEMLIGHT = registerBlock("rose_gold_gemlight",
             () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(2f).requiresCorrectToolForDrops().lightLevel((swag) -> {
                         return 15;
-                    })), CreativeModeTab.TAB_BUILDING_BLOCKS);
+                    })), HokumTab.HOKUM_TAB);
+
+    public static final RegistryObject<Block> AMBER_BLOCK = registerBlock("amber_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(10f).requiresCorrectToolForDrops()), HokumTab.HOKUM_TAB);
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

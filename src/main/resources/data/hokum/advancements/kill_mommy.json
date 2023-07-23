@@ -1,0 +1,35 @@
+{
+  "parent": "hokum:labyrinth",
+  "criteria": {
+    "kill_mommy": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "hokum:mommy_long_fangs"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Kill the queen of the jungle",
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:spider_staff"
+    },
+    "show_toast": true,
+    "title": "Mommy? Sorry"
+  },
+  "requirements": [
+    [
+      "kill_mommy"
+    ]
+  ]
+}

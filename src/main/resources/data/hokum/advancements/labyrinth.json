@@ -1,0 +1,37 @@
+{
+  "parent": "hokum:astral_armors_root",
+  "criteria": {
+    "labyrinth": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "hokum:jungle_labyrinth"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Find a Jungle Labyrinth",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:mossy_jungle_bricks"
+    },
+    "show_toast": true,
+    "title": "Ancient Architecture"
+  },
+  "requirements": [
+    [
+      "labyrinth"
+    ]
+  ]
+}

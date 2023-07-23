@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:lunite",
+  "criteria": {
+    "lunite_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:lunite_staff"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "We love casting spells",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:lunite_staff"
+    },
+    "show_toast": true,
+    "title": "Shadow Wizard"
+  },
+  "requirements": [
+    [
+      "lunite_staff"
+    ]
+  ]
+}

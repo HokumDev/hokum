@@ -1,0 +1,50 @@
+{
+  "parent": "hokum:labyrinth",
+  "criteria": {
+    "amber_armor": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "hokum:amber_headgear"
+          },
+          {
+            "items": [
+              "hokum:amber_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "hokum:amber_leggings"
+            ]
+          },
+          {
+            "items": [
+              "hokum:amber_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Discover a full set of Amber armor",
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:amber_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": "Cover Me In History"
+  },
+  "requirements": [
+    [
+      "amber_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 40
+  }
+}

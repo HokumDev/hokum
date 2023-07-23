@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rose_gold",
+  "ingredients": [
+    {
+      "item": "hokum:amber_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "hokum:amber"
+  }
+}

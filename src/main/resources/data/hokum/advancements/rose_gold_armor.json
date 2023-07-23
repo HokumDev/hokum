@@ -1,0 +1,54 @@
+{
+  "parent": "hokum:rose_gold",
+  "criteria": {
+    "rose_gold_armor": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "hokum:rose_gold_headgear"
+          },
+          {
+            "items": [
+              "hokum:rose_gold_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "hokum:rose_gold_leggings"
+            ]
+          },
+          {
+            "items": [
+              "hokum:rose_gold_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "hokum.advancements.rose_gold_armor.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:rose_gold_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "hokum.advancements.rose_gold_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "rose_gold_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 30
+  }
+}

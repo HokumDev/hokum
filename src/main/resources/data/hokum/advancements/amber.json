@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:labyrinth",
+  "criteria": {
+    "amber": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:amber"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "In the ancient jungle labyrinth...",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:amber"
+    },
+    "show_toast": true,
+    "title": "Tomb Raider"
+  },
+  "requirements": [
+    [
+      "amber"
+    ]
+  ]
+}

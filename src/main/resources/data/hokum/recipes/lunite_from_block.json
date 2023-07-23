@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lunite",
+  "ingredients": [
+    {
+      "item": "hokum:lunite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "hokum:lunite_ingot"
+  }
+}

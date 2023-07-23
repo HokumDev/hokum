@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:celestine",
+  "criteria": {
+    "celestine_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:celestine_staff"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Obtain a Celestine Staff",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:celestine_staff"
+    },
+    "show_toast": true,
+    "title": "How's The Weather Up There?"
+  },
+  "requirements": [
+    [
+      "celestine_staff"
+    ]
+  ]
+}

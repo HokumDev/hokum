@@ -1,7 +1,6 @@
 package com.barryb.hokum.event;
 
 import com.barryb.hokum.Hokum;
-import com.barryb.hokum.custom.ArmorSetBonus;
 import com.barryb.hokum.entity.ModMobs;
 import com.barryb.hokum.entity.MommyLongFangs;
 import com.barryb.hokum.entity.Widow;

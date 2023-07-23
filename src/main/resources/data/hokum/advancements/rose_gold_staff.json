@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:rose_gold",
+  "criteria": {
+    "rose_gold_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:rose_gold_staff"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Craft a healing Rose Gold Staff",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:rose_gold_staff"
+    },
+    "show_toast": true,
+    "title": "Heroes Never Die!"
+  },
+  "requirements": [
+    [
+      "rose_gold_staff"
+    ]
+  ]
+}

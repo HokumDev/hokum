@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:celestine_crystal",
+  "criteria": {
+    "celestine": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:celestine_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Forge a Celestine Ingot from Celestine Crystal and Gold",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:celestine_ingot"
+    },
+    "show_toast": true,
+    "title": "Sky Alloy"
+  },
+  "requirements": [
+    [
+      "celestine"
+    ]
+  ]
+}

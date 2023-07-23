@@ -1,0 +1,33 @@
+{
+  "parent": "hokum:astral_armors_root",
+  "criteria": {
+    "netherite_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hokum:netherite_staff"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Crumble armor with the Netherite Staff",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hokum:netherite_staff"
+    },
+    "show_toast": true,
+    "title": "Nether Mage"
+  },
+  "requirements": [
+    [
+      "netherite_staff"
+    ]
+  ]
+}
