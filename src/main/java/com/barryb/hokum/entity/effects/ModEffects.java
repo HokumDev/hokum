@@ -15,6 +15,10 @@ public class ModEffects {
 
     public static final RegistryObject<MobEffect> VULNERABLE = MOB_EFFECTS.register("vulnerable",
             () -> new VulnerableEffect(MobEffectCategory.HARMFUL, 15976192));
+    public static final RegistryObject<MobEffect> STEALTH = MOB_EFFECTS.register("stealth",
+            () -> new PlaceholderEffect(MobEffectCategory.BENEFICIAL, 000000));
+    public static final RegistryObject<MobEffect> REVEALED = MOB_EFFECTS.register("revealed",
+            () -> new PlaceholderEffect(MobEffectCategory.HARMFUL, 15400960));
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

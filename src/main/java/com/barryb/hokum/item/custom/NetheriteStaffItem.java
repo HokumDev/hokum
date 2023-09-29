@@ -30,10 +30,10 @@ public class NetheriteStaffItem extends StaffItem {
     @Override
     public InteractionResult interactLivingEntity(ItemStack itemStack, Player player, LivingEntity target, InteractionHand interactionHand) {
         if (!player.getCooldowns().isOnCooldown(itemStack.getItem())) {
-            target.addEffect(new MobEffectInstance(ModEffects.VULNERABLE.get(), 120, 2), player);
+            target.addEffect(new MobEffectInstance(ModEffects.VULNERABLE.get(), 120, 0), player);
             player.awardStat(Stats.ITEM_USED.get(itemStack.getItem()));
             player.level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_SHOOT, SoundSource.PLAYERS, 1.0f, 1.0f);
-            player.getCooldowns().addCooldown(this, 300);
+            player.getCooldowns().addCooldown(this, 500);
 
         }
 

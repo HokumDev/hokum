@@ -17,6 +17,9 @@
     "hokum:fools_gold",
     "hokum:amber_block",
     "hokum:barite",
-    "hokum:barite_polished"
+    "hokum:polished_barite",
+    "hokum:polished_barite_stairs",
+    "hokum:polished_barite_slab"
+
   ]
 }

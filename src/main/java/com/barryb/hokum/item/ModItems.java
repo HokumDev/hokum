@@ -5,6 +5,7 @@ import com.barryb.hokum.block.ModBlocks;
 import com.barryb.hokum.custom.ArmorMaterials;
 import com.barryb.hokum.entity.ModMobs;
 import com.barryb.hokum.item.custom.*;
+import com.barryb.hokum.item.custom.lunite.*;
 import com.barryb.hokum.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
@@ -42,7 +43,8 @@ public class ModItems {
             () ->  new HoeItem(ToolTiers.ROSEGOLD, 0, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
 
     public static final RegistryObject<StaffItem> ROSE_GOLD_STAFF = ITEMS.register("rose_gold_staff",
-            () -> new RoseStaffItem(ToolTiers.ROSEGOLD, 0, -3f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+            () -> new RoseStaffItem(ToolTiers.ROSEGOLD, 2, -3f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+
 
 
     //rose gold armor
@@ -100,7 +102,7 @@ public class ModItems {
     public static final RegistryObject<HoeItem> CELESTINE_HOE = ITEMS.register("celestine_hoe",
             () ->  new HoeItem(ToolTiers.CELESTINE, 0, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
     public static final RegistryObject<StaffItem> CELESTINE_STAFF = ITEMS.register("celestine_staff",
-            () -> new CelestineStaffItem(ToolTiers.CELESTINE, 0, -3f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+            () -> new CelestineStaffItem(ToolTiers.CELESTINE, 5, -3f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
 
     public static final RegistryObject<ModArmorItem> CELESTINE_HELMET = ITEMS.register("celestine_helmet",
             () -> new ModArmorItem(ArmorTiers.CELESTINE, EquipmentSlot.HEAD, 0.02, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
@@ -119,18 +121,18 @@ public class ModItems {
     //Lunite
 
     public static final RegistryObject<SwordItem> LUNITE_SWORD = ITEMS.register("lunite_sword",
-            () -> new SwordItem(ToolTiers.LUNITE, 10, -2.7f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+            () -> new LuniteSwordItem(ToolTiers.LUNITE, 10, -2.7f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
     public static final RegistryObject<PickaxeItem> LUNITE_PICKAXE = ITEMS.register("lunite_pickaxe",
-            () -> new PickaxeItem(ToolTiers.LUNITE, 6, -2.8f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+            () -> new LunitePickaxeItem(ToolTiers.LUNITE, 6, -2.8f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
     public static final RegistryObject<ShovelItem> LUNITE_SHOVEL = ITEMS.register("lunite_shovel",
-            () -> new ShovelItem(ToolTiers.LUNITE, 5, -2.9f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+            () -> new LuniteShovelItem(ToolTiers.LUNITE, 5, -2.9f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
     public static final RegistryObject<AxeItem> LUNITE_AXE = ITEMS.register("lunite_axe",
-            () ->  new AxeItem(ToolTiers.LUNITE, 14, -3.2f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+            () ->  new LuniteAxeItem(ToolTiers.LUNITE, 14, -3.2f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
     public static final RegistryObject<HoeItem> LUNITE_HOE = ITEMS.register("lunite_hoe",
-            () ->  new HoeItem(ToolTiers.LUNITE, 1, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+            () ->  new LuniteHoeItem(ToolTiers.LUNITE, 1, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
 
     public static final RegistryObject<StaffItem> LUNITE_STAFF = ITEMS.register("lunite_staff",
-            () -> new LuniteStaffItem(ToolTiers.LUNITE, 0, -3f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+            () -> new LuniteStaffItem(ToolTiers.LUNITE, 6, -3f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
 
     public static final RegistryObject<ModArmorItem> LUNITE_HELMET = ITEMS.register("lunite_helmet",
             () -> new ModArmorItem(ArmorTiers.LUNITE, EquipmentSlot.HEAD, 0, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
@@ -205,14 +207,75 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(HokumTab.HOKUM_TAB)));
 
 
+    public static final RegistryObject<AssassinArmorItem> ASSASSIN_HELMET = ITEMS.register("assassin_helmet",
+            () -> new AssassinArmorItem(ArmorTiers.ASSASSIN, EquipmentSlot.HEAD, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB), 1));
+    public static final RegistryObject<AssassinArmorItem> ASSASSIN_CHESTPLATE = ITEMS.register("assassin_chestplate",
+            () -> new AssassinArmorItem(ArmorTiers.ASSASSIN, EquipmentSlot.CHEST, 0,  new Item.Properties().tab(HokumTab.HOKUM_TAB), 1));
+    public static final RegistryObject<AssassinArmorItem> ASSASSIN_LEGGINGS = ITEMS.register("assassin_leggings",
+            () -> new AssassinArmorItem(ArmorTiers.ASSASSIN, EquipmentSlot.LEGS, 0,  new Item.Properties().tab(HokumTab.HOKUM_TAB), 1));
+    public static final RegistryObject<AssassinArmorItem> ASSASSIN_BOOTS = ITEMS.register("assassin_boots",
+            () -> new AssassinArmorItem(ArmorTiers.ASSASSIN, EquipmentSlot.FEET, 0,  new Item.Properties().tab(HokumTab.HOKUM_TAB), 1));
+
+    public static final RegistryObject<AssassinArmorItem> ECHO_ASSASSIN_HELMET = ITEMS.register("echo_assassin_helmet",
+            () -> new AssassinArmorItem(ArmorTiers.ECHO_ASSASSIN, EquipmentSlot.HEAD, 0.01, new Item.Properties().tab(HokumTab.HOKUM_TAB), 1));
+    public static final RegistryObject<AssassinArmorItem> ECHO_ASSASSIN_CHESTPLATE = ITEMS.register("echo_assassin_chestplate",
+            () -> new AssassinArmorItem(ArmorTiers.ECHO_ASSASSIN, EquipmentSlot.CHEST, 0.02,  new Item.Properties().tab(HokumTab.HOKUM_TAB), 1));
+    public static final RegistryObject<AssassinArmorItem> ECHO_ASSASSIN_LEGGINGS = ITEMS.register("echo_assassin_leggings",
+            () -> new AssassinArmorItem(ArmorTiers.ECHO_ASSASSIN, EquipmentSlot.LEGS, 0.01,  new Item.Properties().tab(HokumTab.HOKUM_TAB), 1));
+    public static final RegistryObject<AssassinArmorItem> ECHO_ASSASSIN_BOOTS = ITEMS.register("echo_assassin_boots",
+            () -> new AssassinArmorItem(ArmorTiers.ECHO_ASSASSIN, EquipmentSlot.FEET, 0.01,  new Item.Properties().tab(HokumTab.HOKUM_TAB), 1));
+
+public static final RegistryObject<ArmorItem> RAINBOW_FLOWER_CROWN = ITEMS.register("rainbow_flower_crown",
+        () -> new AssassinArmorItem(ArmorTiers.RAINBOW_FLOWER, EquipmentSlot.HEAD, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB), 2));
+
+
     public static final RegistryObject<Item> RECORD_CHIRP = ITEMS.register("record_chirp",
             () -> new RecordItem(2, ModSounds.RECORD_CHIRP,
+                    new Item.Properties().stacksTo(1).tab(HokumTab.HOKUM_TAB).rarity(Rarity.RARE), 2160));
+    public static final RegistryObject<Item> RECORD_STAL = ITEMS.register("record_stal",
+            () -> new RecordItem(2, ModSounds.RECORD_STAL,
                     new Item.Properties().stacksTo(1).tab(HokumTab.HOKUM_TAB).rarity(Rarity.RARE), 2160));
     public static final RegistryObject<Item> WIDOW_EYE = ITEMS.register("widow_eye",
             () -> new Item(new Item.Properties().tab(HokumTab.HOKUM_TAB).food(Foodstuffs.WIDOW_EYE)));
 
+    public static final RegistryObject<Item> LUCKY_BONE = ITEMS.register("lucky_bone",
+            () -> new Item(new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<Item> ASSASSIN_CLOTH = ITEMS.register("assassin_cloth",
+            () -> new Item(new Item.Properties().tab(HokumTab.HOKUM_TAB)));
 
 
+    /*
+    public static final RegistryObject<NetherArmorItem> BLAZE_GOLD_HELMET = ITEMS.register("blaze_gold_helmet",
+            () -> new NetherArmorItem(ArmorTiers.BLAZE_GOLD, EquipmentSlot.HEAD,  new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<NetherArmorItem> BLAZE_GOLD_CHESTPLATE = ITEMS.register("blaze_gold_chestplate",
+            () -> new NetherArmorItem(ArmorTiers.BLAZE_GOLD, EquipmentSlot.CHEST,  new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<NetherArmorItem> BLAZE_GOLD_LEGGINGS = ITEMS.register("blaze_gold_leggings",
+            () -> new NetherArmorItem(ArmorTiers.BLAZE_GOLD, EquipmentSlot.LEGS,  new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<NetherArmorItem> BLAZE_GOLD_BOOTS = ITEMS.register("blaze_gold_boots",
+            () -> new NetherArmorItem(ArmorTiers.BLAZE_GOLD, EquipmentSlot.FEET,  new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+*/
+    public static final RegistryObject<StaffItem> WIDOW_STAFF = ITEMS.register("widow_staff",
+            () -> new RecluseStaffItem(ToolTiers.AMBER, 10, -3f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+
+    public static final RegistryObject<NetherArmorItem> CHORAL_HELMET = ITEMS.register("choral_helmet",
+            () -> new NetherArmorItem(ArmorTiers.CHORAL, EquipmentSlot.HEAD,  new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<NetherArmorItem> CHORAL_CHESTPLATE = ITEMS.register("choral_chestplate",
+            () -> new NetherArmorItem(ArmorTiers.CHORAL, EquipmentSlot.CHEST,  new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<NetherArmorItem> CHORAL_LEGGINGS = ITEMS.register("choral_leggings",
+            () -> new NetherArmorItem(ArmorTiers.CHORAL, EquipmentSlot.LEGS,  new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<NetherArmorItem> CHORAL_BOOTS = ITEMS.register("choral_boots",
+            () -> new NetherArmorItem(ArmorTiers.CHORAL, EquipmentSlot.FEET,  new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+
+    public static final RegistryObject<SwordItem> CHORAL_SWORD = ITEMS.register("choral_sword",
+            () -> new SwordItem(ToolTiers.CHORAL, 5, -2.4f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<PickaxeItem> CHORAL_PICKAXE = ITEMS.register("choral_pickaxe",
+            () -> new PickaxeItem(ToolTiers.CHORAL, 1, -2.8f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<ShovelItem> CHORAL_SHOVEL = ITEMS.register("choral_shovel",
+            () -> new ShovelItem(ToolTiers.CHORAL, 2, -2.8f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<AxeItem> CHORAL_AXE = ITEMS.register("choral_axe",
+            () ->  new AxeItem(ToolTiers.CHORAL, 6, -3.0f, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
+    public static final RegistryObject<HoeItem> CHORAL_HOE = ITEMS.register("choral_hoe",
+            () ->  new HoeItem(ToolTiers.CHORAL, 1, 0, new Item.Properties().tab(HokumTab.HOKUM_TAB)));
 
 
 
@@ -222,19 +285,20 @@ public class ModItems {
 
     public static class ToolTiers {
         public static final Tier ROSEGOLD = new ForgeTier(2, 280, 12f, 0, 12, null, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
-        public static final Tier CELESTINE = new ForgeTier(5, 1200, 10f, 0, 8, null, () -> Ingredient.of(ModItems.CELESTINE_CRYSTAL.get()));
+        public static final Tier CELESTINE = new ForgeTier(5, 1600, 11f, 0, 8, null, () -> Ingredient.of(ModItems.CELESTINE_CRYSTAL.get()));
         public static final Tier LUNITE = new ForgeTier(5, -1, 8f, 0, 8, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final Tier BAMBOO = new ForgeTier(1, 20, 8f, 0, 0, null, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final Tier DOOM = new ForgeTier(1, 100, 8f, 0, 5, null, () -> Ingredient.of(Items.MAGMA_CREAM));
         public static final Tier AMBER = new ForgeTier(3, 777, 4f, 0, 10, null, () -> Ingredient.of(ModItems.AMBER.get()));
+        public static final Tier CHORAL = new ForgeTier(3, 999, 4f, 0, 10, null, () -> Ingredient.of(ModItems.AMBER.get()));
 
     }
 
     public static class ArmorTiers {
         public static final ArmorMaterial ROSE_GOLD = new com.barryb.hokum.custom.ArmorMaterials("rose_gold", 12, new int[] {2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD,1, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
-        public static final ArmorMaterial ROSE_GOLD_CROWN = new com.barryb.hokum.custom.ArmorMaterials("rose_crown", 12, new int[] {1, 1, 1, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
-        public static final ArmorMaterial CELESTINE = new ArmorMaterials("celestine", 31, new int[] {3, 6, 8, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.CELESTINE_DUST.get()));
-        public static final ArmorMaterial CELESTINE_CROWN = new ArmorMaterials("celestine_crown", 31, new int[] {1, 1, 1, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.CELESTINE_DUST.get()));
+        public static final ArmorMaterial ROSE_GOLD_CROWN = new com.barryb.hokum.custom.ArmorMaterials("rose_crown", 12, new int[] {1, 1, 1, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 1, 0, () -> Ingredient.of(ModItems.ROSEGOLD.get()));
+        public static final ArmorMaterial CELESTINE = new ArmorMaterials("celestine", 34, new int[] {3, 6, 8, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.CELESTINE_DUST.get()));
+        public static final ArmorMaterial CELESTINE_CROWN = new ArmorMaterials("celestine_crown", 34, new int[] {1, 1, 1, 3}, 10, SoundEvents.ENCHANTMENT_TABLE_USE, 2, 0, () -> Ingredient.of(ModItems.CELESTINE_DUST.get()));
         public static final ArmorMaterial LUNITE = new com.barryb.hokum.custom.ArmorMaterials("lunite", -1, new int[] {3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 3, 0, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
         public static final ArmorMaterial LUNITE_CROWN = new ArmorMaterials("lunite_crown", -1, new int[] {1, 1, 1, 3}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 3, 0, () -> Ingredient.of(ModItems.LUNITE_DUST.get()));
 
@@ -242,8 +306,20 @@ public class ModItems {
 
         public static final ArmorMaterial NETHERITE_CROWN = new ArmorMaterials("netherite_crown", 37, new int[] {1, 1, 1, 3}, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3, 0.1f, () -> Ingredient.of(Items.NETHERITE_INGOT));
 
-        public static final ArmorMaterial AMBER = new ArmorMaterials("amber", 28, new int[] {2, 3, 4, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.AMBER.get()));
+        public static final ArmorMaterial AMBER = new ArmorMaterials("amber", 28, new int[] {2, 3, 5, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.AMBER.get()));
         public static final ArmorMaterial AMBER_CROWN = new ArmorMaterials("amber_crown", 28, new int[] {0, 0, 0, 2}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.AMBER.get()));
+
+        public static final ArmorMaterial ASSASSIN = new ArmorMaterials("assassin", 24, new int[] {1, 3, 4, 1}, 10, SoundEvents.ARMOR_EQUIP_CHAIN, 0, 0, () -> Ingredient.of(ModItems.ASSASSIN_CLOTH.get()));
+
+        public static final ArmorMaterial ECHO_ASSASSIN = new ArmorMaterials("echo_assassin", 24, new int[] {2, 5, 6, 2}, 10, SoundEvents.SCULK_BLOCK_PLACE, 1, 1, () -> Ingredient.of(Items.ECHO_SHARD));
+
+        public static final ArmorMaterial RAINBOW_FLOWER = new ArmorMaterials("rainbow_flower", -1, new int[] {0, 0, 0, 1}, 10, SoundEvents.MOSS_PLACE, 0, 0, () -> Ingredient.of(Items.VINE));
+
+        public static final ArmorMaterial BLAZE_GOLD = new com.barryb.hokum.custom.ArmorMaterials("nether_gold", 12, new int[] {1, 3, 5, 2}, 10, SoundEvents.ARMOR_EQUIP_GOLD, 0, 0, () -> Ingredient.of(Items.BLAZE_POWDER));
+
+        public static final ArmorMaterial CHORAL = new ArmorMaterials("choral", 17, new int[] {3, 6, 8, 3}, 10, SoundEvents.CHORUS_FLOWER_GROW, 0, 0, () -> Ingredient.of(ModItems.AMBER.get()));
+
+
 
         public static final FlowerCrownMaterial BLINDFOLD = new FlowerCrownMaterial("blindfold", () -> Ingredient.of(ItemTags.WOOL));
 
@@ -258,6 +334,7 @@ public class ModItems {
         public static final FlowerCrownMaterial BLACK_FLOWER = new FlowerCrownMaterial("black_flower", () -> Ingredient.of(Items.VINE));
 
         public static final FlowerCrownMaterial WHITE_FLOWER = new FlowerCrownMaterial("white_flower", () -> Ingredient.of(Items.VINE));
+
 
     }
 

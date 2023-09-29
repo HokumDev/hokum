@@ -16,7 +16,7 @@ public class ModPlacedFeatures {
 
 
     public static final RegistryObject<PlacedFeature> LUNITE_ORE_PLACED = PLACED_FEATURES.register("lunite_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.LUNITE_ORE.getHolder().get(), commonOrePlacement(20,
+            () -> new PlacedFeature(ModConfiguredFeatures.LUNITE_ORE.getHolder().get(), commonOrePlacement(30,
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-40), VerticalAnchor.aboveBottom(20)))));
 
     public static final RegistryObject<PlacedFeature> CELESTINE_GEODE_PLACED = PLACED_FEATURES.register("celestine_geode_placed",

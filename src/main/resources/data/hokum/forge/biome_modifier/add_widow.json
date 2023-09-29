@@ -4,7 +4,7 @@
   "spawners":
   {
     "type": "hokum:widow",
-    "weight": 120,
+    "weight": 230,
     "minCount": 1,
     "maxCount": 5
   }

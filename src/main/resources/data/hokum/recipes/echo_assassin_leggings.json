@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:echo_shard"
+  },
+  "base": {
+    "item": "hokum:assassin_leggings"
+  },
+  "result": {
+    "item": "hokum:echo_assassin_leggings"
+  }
+}

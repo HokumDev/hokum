@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.barryb.hokum.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "hokum.refmap.json",
+  "mixins": [
+    "NoParticleRenderMixin",
+    "NoRenderMixin",
+    "VisibilityPercentageMixin",
+    "LuckyBoneMixin"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}

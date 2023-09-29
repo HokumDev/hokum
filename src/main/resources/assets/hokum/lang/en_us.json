@@ -68,6 +68,18 @@
   "item.hokum.diamond_crown": "Diamond Crown",
   "item.hokum.netherite_crown": "Netherite Crown",
   "item.hokum.spider_staff": "Spider Staff",
+  "entity.minecraft.villager.byg.forager": "Forgager",
+  "item.hokum.assassin_helmet": "Assassin Helmet",
+  "item.hokum.assassin_chestplate": "Assassin Chestplate",
+  "item.hokum.assassin_leggings": "Assassin Leggings",
+  "item.hokum.assassin_boots": "Assassin Boots",
+  "item.hokum.echo_assassin_helmet": "Echo Assassin Helmet",
+  "item.hokum.echo_assassin_chestplate": "Echo Assassin Chestplate",
+  "item.hokum.echo_assassin_leggings": "Echo Assassin Leggings",
+  "item.hokum.echo_assassin_boots": "Echo Assassin Boots",
+  "item.hokum.lucky_bone": "Lucky Bone",
+  "item.hokum.widow_staff": "Widow Staff",
+  "item.hokum.assassin_cloth": "Assassin Cloth",
 
 
 
@@ -122,8 +134,11 @@
 
 
 
-  "item.hokum.record_chirp": "Chirp Record",
+  "item.hokum.record_chirp": "Music Record",
   "item.hokum.record_chirp.desc": "Koltino - Chirp",
+
+  "item.hokum.record_stal": "Music Record",
+  "item.hokum.record_stal.desc": "Koltino - Stal",
 
   "hokum.advancements.all_flower_crowns.title": "A Home For Flowers",
   "hokum.advancements.all_flower_crowns.description": "Collect every single flower crown",
@@ -135,8 +150,8 @@
   "hokum.advancements.amber_armor.description": "Discover a full set of Amber Armor",
   "hokum.advancements.amber_staff.title": "Infinite Amber?",
   "hokum.advancements.amber_staff.description": "Violate the laws of matter conservation with Amber Staff",
-  "hokum.advancements.amber_armors_root.title": "Ancient Armors",
-  "hokum.advancements.amber_armors_root.description": "A whole new world",
+  "hokum.advancements.astral_armors_root.title": "Astral Armors",
+  "hokum.advancements.astral_armors_root.description": "A whole new world",
   "hokum.advancements.celestine_crystal.title": "Rock Candy",
   "hokum.advancements.celestine_crystal.description": "From the fragments of an underground sky...",
   "hokum.advancements.celestine.title": "Sky Alloy",
@@ -168,8 +183,12 @@
   "hokum.advancements.rose_gold_staff.title": "Heroes Never Die",
   "hokum.advancements.rose_gold_staff.description": "Craft a healing Rose Gold Staff",
 
-  "itemGroup.hokumtab": "Hokum - Astral Armors"
 
 
+  "itemGroup.hokumtab": "Hokum - Astral Armors",
+  "death.attack.marked": "%1$s had a glowup",
+
+  "effect.hokum.stealth": "Stealth",
+  "effect.hokum.revealed": "Revealed"
 
 }

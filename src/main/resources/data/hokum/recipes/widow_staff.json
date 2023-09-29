@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:wither_skeleton_skull"
+  },
+  "base": {
+    "item": "hokum:spider_staff"
+  },
+  "result": {
+    "item": "hokum:widow_staff"
+  }
+}

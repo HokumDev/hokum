@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "key": {
+      "#": {
+        "item": "minecraft:music_disc_stal"
+      },
+      "X": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "pattern": [
+      "XXX",
+      "X#X",
+      "XXX"
+
+    ],
+    "result": {
+      "item": "hokum:record_stal"
+    }
+  }

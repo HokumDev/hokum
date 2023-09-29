@@ -2,9 +2,11 @@ package com.barryb.hokum;
 
 import com.barryb.hokum.block.ModBlocks;
 import com.barryb.hokum.client.renderer.entity.MommyRenderer;
+import com.barryb.hokum.client.renderer.entity.SludgeonRenderer;
 import com.barryb.hokum.client.renderer.entity.WidowRenderer;
 import com.barryb.hokum.custom.CustomBrewingRecipe;
 import com.barryb.hokum.custom.LootModifiers;
+import com.barryb.hokum.entity.ModAttributes;
 import com.barryb.hokum.entity.ModMobs;
 import com.barryb.hokum.entity.effects.ModEffects;
 import com.barryb.hokum.item.ModPotions;
@@ -61,6 +63,7 @@ public class Hokum
         LootModifiers.register(modEventBus);
         ModPotions.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModAttributes.register(modEventBus);
 
 
 
@@ -81,9 +84,7 @@ public class Hokum
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-        LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
-
+        LOGGER.info("im just remembered to change this (hokum)");
         BrewingRecipeRegistry.addRecipe(new CustomBrewingRecipe(Potions.AWKWARD,
                 ModItems.WIDOW_EYE.get(), ModPotions.WIDOW_POTION.get()));
 
@@ -106,6 +107,9 @@ public class Hokum
         {
             EntityRenderers.register(ModMobs.WIDOW.get(), WidowRenderer::new);
             EntityRenderers.register(ModMobs.MOMMY.get(), MommyRenderer::new);
+            EntityRenderers.register(ModMobs.SLUDGEON.get(), SludgeonRenderer::new);
+
+
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.AMBER_SCAFFOLDING.get(), RenderType.translucent());
 
 

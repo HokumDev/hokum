@@ -45,6 +45,7 @@ public class CelestineStaffItem extends StaffItem {
                 player.getCooldowns().addCooldown(this, 60);
                 player.awardStat(Stats.ITEM_USED.get(this));
             }
+
         }
 
         return super.use(level, player, hand);
